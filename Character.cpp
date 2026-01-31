@@ -1,0 +1,144 @@
+#include <iostream>
+#include <cmath> // Required for std::pow
+#include "Character.h"
+#include "Item.h" // Needed for Item methods
+
+Character::Character(std::string name, int hp, StatBlock stats)
+    : m_Name(name), m_MaxHP(hp), m_CurrentHP(hp), m_Stats(stats), m_Level(1), m_CurrentXP(0), m_MaxXP(100), m_Gold(100) {
+    // Member Initializer List
+}
+
+Character::~Character() {
+}
+
+void Character::TakeDamage(int damage) {
+    m_CurrentHP -= damage;
+    if (m_CurrentHP < 0) {
+        m_CurrentHP = 0;
+    }
+    std::cout << m_Name << " takes " << damage << " damage." << std::endl;
+}
+
+void Character::Heal(int amount) {
+    m_CurrentHP += amount;
+    if (m_CurrentHP > m_MaxHP) {
+        m_CurrentHP = m_MaxHP;
+    }
+    std::cout << m_Name << " heals for " << amount << " HP!" << std::endl;
+}
+
+std::string Character::GetName() {
+    return m_Name;
+}
+
+int Character::GetCurrentHP() {
+    return m_CurrentHP;
+}
+
+int Character::GetMaxHP() {
+    return m_MaxHP;
+}
+
+int Character::GetLevel() {
+    return m_Level;
+}
+
+StatBlock Character::GetStats() {
+    return m_Stats;
+}
+
+void Character::GainXP(int amount) {
+    m_CurrentXP += amount;
+    std::cout << m_Name << " gained " << amount << " XP!" << std::endl;
+    if (m_CurrentXP >= m_MaxXP) {
+        LevelUp();
+    }
+}
+
+void Character::LevelUp() {
+    // Basic Level Up Logic
+    m_CurrentXP -= m_MaxXP; // Overflow XP carries over
+    m_Level++;
+    
+    // Learning Outcome: Math Functions
+    // We explicitly calculate the next XP threshold using an exponential formula.
+    // New MaxXP = 100 * (1.5 ^ Level)
+    m_MaxXP = static_cast<int>(100 * std::pow(1.5, m_Level));
+    
+    // Increase HP
+    m_MaxHP += 10; 
+    m_CurrentHP = m_MaxHP; // Heal on level up
+
+    // Default Stats Increase (Can be overridden by subclasses for specific growth)
+    m_Stats.IncreaseStats(1, 1, 1, 0, 0); 
+
+    std::cout << "LEVEL UP! " << m_Name << " is now Level " << m_Level << "!" << std::endl;
+    std::cout << "HP Increased to " << m_MaxHP << ". Stats increased!" << std::endl;
+}
+
+// --- Inventory System Implementation ---
+
+void Character::AddItem(std::unique_ptr<Item> item) {
+    std::cout << m_Name << " received: " << item->GetName() << std::endl;
+    m_Inventory.push_back(std::move(item)); // std::move is used to transfer ownership of item to inventory since item is a unique ptr
+}
+
+bool Character::HasItems() {
+    return !m_Inventory.empty();
+}
+
+void Character::PrintInventory() {
+    std::cout << "\n--- Inventory ---" << std::endl;
+    if (m_Inventory.empty()) {
+        std::cout << "(Empty)" << std::endl;
+        return;
+    }
+    
+    for (size_t i = 0; i < m_Inventory.size(); ++i) {
+        std::cout << i + 1 << ". " << m_Inventory[i]->GetName() 
+                  << " (" << m_Inventory[i]->GetDescription() << ")" << std::endl;
+    }
+}
+
+void Character::UseItem(int index) {
+    if (index < 0 || index >= static_cast<int>(m_Inventory.size())) {
+        std::cout << "Invalid item selection!" << std::endl;
+        return;
+    }
+
+    // Access the item
+    // We use .get() to pass the raw pointer because Use() expects a pointer, not unique_ptr
+    m_Inventory[index]->Use(this);
+
+    // If consumable, remove it
+    if (m_Inventory[index]->IsConsumable()) {
+        // std::vector::erase needs an iterator. 
+        // m_Inventory.begin() + index gives us the iterator to the item.
+        m_Inventory.erase(m_Inventory.begin() + index);
+    }
+}
+
+// --- Gold System Implementation ---
+
+int Character::GetGold() const {
+    // Justification: Const Correctness
+    // This getter does not modify the object, so it's marked const.
+    return m_Gold;
+}
+
+void Character::AddGold(int amount) {
+    // Justification: Encapsulation
+    // Instead of exposing m_Gold directly, we use a method.
+    // This allows us to add validation or effects later (e.g., "gold cap").
+    m_Gold += amount;
+    std::cout << m_Name << " received " << amount << " gold. Total: " << m_Gold << std::endl;
+}
+
+bool Character::SpendGold(int amount) {
+    if (m_Gold < amount) {
+        std::cout << m_Name << " doesn't have enough gold! (Have: " << m_Gold << ", Need: " << amount << ")" << std::endl;
+        return false;
+    }
+    m_Gold -= amount; // If we purchase an item, decrement Gold
+    return true;
+}
