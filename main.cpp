@@ -100,8 +100,8 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
                 action = 0;
             }
 
+            // ATTACK LOGIC
             if (action == 1) {
-                // ATTACK LOGIC
                 int dmg = player->GetStats().GetStrength();
                 std::cout << "You attack the " << enemy->GetClassName() << " for " << dmg << " damage!" << std::endl;
                 enemy->TakeDamage(dmg);
@@ -113,7 +113,9 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
                     state = BattleState::EnemyTurn;
                 }
             } 
-            else if (action == 3) { // INVENTORY LOGIC
+
+            // INVENTORY LOGIC
+            else if (action == 3) { 
                  if (player->HasItems()) {
                      player->PrintInventory();
                      std::cout << "0. Back" << std::endl;
@@ -133,7 +135,8 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
                  }
             }
 
-            else if (action == 4) { // Shop logic
+            // Shop logic
+            else if (action == 4) { 
                 VisitShop(*player, merchant);   
             }
 
@@ -142,6 +145,8 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
                 state = BattleState::EnemyTurn;
             }
         } 
+
+        // ENEMY TURN
         else if (state == BattleState::EnemyTurn) {
             std::cout << "\n=======================================================" << std::endl;
             std::cout << "[Enemy Turn]" << std::endl;

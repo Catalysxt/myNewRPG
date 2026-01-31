@@ -38,10 +38,11 @@ public:
     void AddGold(int amount);
     bool SpendGold(int amount); // Returns false if insufficient funds
 
-protected:
-    // XP System
-    virtual void LevelUp();
+    // XP System (public so battles can reward XP)
     void GainXP(int amount);
+
+protected:
+    virtual void LevelUp();
 
     std::string m_Name;
     int m_Level;

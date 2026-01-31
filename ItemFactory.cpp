@@ -29,6 +29,7 @@ std::unique_ptr<Item> ItemFactory::CreateItem(const std::string& itemName) {
 std::vector<ShopItem> ItemFactory::GetShopCatalog() {
     // Justification: Single Source of Truth for Shop Inventory
     // This defines what items are available and their base prices.
+    // The purchasing of items is separate from the creation of items.
     return {
         {"Health Potion", 25},
         {"Greater Health Potion", 60}

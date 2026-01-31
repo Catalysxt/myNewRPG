@@ -1,0 +1,3 @@
+C:/Users/User/Coding/myNewRPG/build/CMakeFiles/myRPG.dir
+C:/Users/User/Coding/myNewRPG/build/CMakeFiles/edit_cache.dir
+C:/Users/User/Coding/myNewRPG/build/CMakeFiles/rebuild_cache.dir

@@ -65,11 +65,13 @@ void Character::LevelUp() {
     // We explicitly calculate the next XP threshold using an exponential formula.
     m_MaxXP = static_cast<int>(100 * std::pow(1.5, m_Level));
     
-    // Increase HP
+    // What actually changes on a Level Up
+
+    // 1. Increase HP
     m_MaxHP += 10; 
     m_CurrentHP = m_MaxHP; // Heal on level up
 
-    // Default Stats Increase (Can be overridden by subclasses for specific growth)
+    // 2. Default Stats Increase (Can be overridden by subclasses for specific growth)
     m_Stats.IncreaseStats(1, 1, 1, 0, 0); 
 
     std::cout << "LEVEL UP! " << m_Name << " is now Level " << m_Level << "!" << std::endl;
