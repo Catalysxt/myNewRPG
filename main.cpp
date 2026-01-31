@@ -21,6 +21,17 @@ enum class CharacterType {
     Rogue
 };
 
+// Factory Function
+std::unique_ptr<Character> CreateCharacter(CharacterType type, std::string name) {
+    switch (type) {
+        case CharacterType::Warrior: return std::make_unique<Warrior>(name);
+        case CharacterType::Wizard:  return std::make_unique<Wizard>(name);
+        case CharacterType::Cleric:  return std::make_unique<Cleric>(name);
+        case CharacterType::Rogue:   return std::make_unique<Rogue>(name);
+        default: return nullptr;
+    }
+}
+
 // --- Shop Interaction Function ---
 void VisitShop(Character& player, Merchant& merchant) {
 
@@ -56,18 +67,6 @@ void VisitShop(Character& player, Merchant& merchant) {
     std::cout << "You leave the shop." << std::endl;
 }
 
-// Factory Function
-// Takes in 2 parameters, the character class and its name
-std::unique_ptr<Character> CreateCharacter(CharacterType type, std::string name) {
-    switch (type) {
-        case CharacterType::Warrior: return std::make_unique<Warrior>(name);
-        case CharacterType::Wizard:  return std::make_unique<Wizard>(name);
-        case CharacterType::Cleric:  return std::make_unique<Cleric>(name);
-        case CharacterType::Rogue:   return std::make_unique<Rogue>(name);
-        default: return nullptr;
-    }
-}
-
 enum class BattleState { 
     PlayerTurn, 
     EnemyTurn, 
@@ -75,7 +74,7 @@ enum class BattleState {
     Defeat 
 };
 
-// ... (PlayBattle function)
+// Main Gameplay loop
 
 void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
     BattleState state = BattleState::PlayerTurn;
@@ -148,7 +147,7 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
             std::cout << "[Enemy Turn]" << std::endl;
             std::cout << "=======================================================" << std::endl;
             
-            // Simple AI: Enemy attacks with Strength
+            // Simple AI: Enemy attack value is equivalent to its Strength attribute
             int dmg = enemy->GetStats().GetStrength();
             std::cout << "The " << enemy->GetClassName() << " attacks you for " << dmg << " damage!" << std::endl;
             player->TakeDamage(dmg);
@@ -199,7 +198,7 @@ int main() {
     // Convert int to Enum. We'll use this to create the derived class (the character)
     CharacterType selectedType = static_cast<CharacterType>(choice);
 
-    // Call the Factory to create the character 
+    // Factory handles creation of Character objects
     std::unique_ptr<Character> player = CreateCharacter(selectedType, name);
 
     if (player) {
@@ -231,6 +230,8 @@ int main() {
         // --- COMBAT PHASE ---
         std::cout << "\n----------------------------------------" << std::endl;
         std::cout << "A wild monster appears!" << std::endl;
+
+        // Create Monster
         std::unique_ptr<Monster> enemy = std::make_unique<Orc>();
         std::cout << "It's an " << enemy->GetClassName() << " with " << enemy->GetMaxHP() << " HP." << std::endl;
         

@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-// Justification: Strategy Pattern
+// Strategy Pattern
 // The Strategy Pattern defines a family of algorithms (pricing strategies),
 // encapsulates each one, and makes them interchangeable.
 // This allows us to implement different pricing logic for the Merchant
@@ -10,13 +10,8 @@ class PricingStrategy {
 public:
     virtual ~PricingStrategy() = default;
 
-    // Justification: Pure Virtual Function
     // Every concrete strategy MUST implement CalculatePrice.
-    // The base price is passed in, and the strategy returns the final price.
     virtual int CalculatePrice(int basePrice) const = 0;
-
-    // Justification: Const Correctness
-    // GetName() doesn't modify the object, so it's marked const.
     virtual std::string GetName() const = 0;
 };
 
@@ -32,8 +27,6 @@ public:
 
 class GreedyMerchantPricing : public PricingStrategy {
 public:
-    // Justification: Encapsulation
-    // The markup factor is internal to the strategy.
     int CalculatePrice(int basePrice) const override {
         return static_cast<int>(basePrice * 1.5); // 50% markup
     }

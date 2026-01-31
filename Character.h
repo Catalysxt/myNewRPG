@@ -21,6 +21,7 @@ public:
     // Abstract Method
     virtual std::string GetClassName() = 0;
     
+    // Getters
     int GetCurrentHP();
     int GetMaxHP();
     int GetLevel();
@@ -33,7 +34,6 @@ public:
     void PrintInventory();
 
     // Gold System
-    // Justification: Encapsulation - Gold is a private member, accessed via getters/setters.
     int GetGold() const;
     void AddGold(int amount);
     bool SpendGold(int amount); // Returns false if insufficient funds
@@ -41,7 +41,8 @@ public:
 protected:
     // XP System
     virtual void LevelUp();
-    
+    void GainXP(int amount);
+
     std::string m_Name;
     int m_Level;
     int m_CurrentHP;
@@ -56,7 +57,4 @@ protected:
 
     // Economy
     int m_Gold;
-
-public:
-    void GainXP(int amount);
 };

@@ -12,5 +12,5 @@ void Potion::Use(Character* user) {
     // For now, I will use a hypothetical Heal() method and add it to Character next.
     
     std::cout << "You drink the potion..." << std::endl;
-    user->Heal(m_HealAmount); 
+    user->Heal(m_HealAmount); // We can call Character methods
 }

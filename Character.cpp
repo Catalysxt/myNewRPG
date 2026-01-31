@@ -22,10 +22,12 @@ void Character::TakeDamage(int damage) {
 void Character::Heal(int amount) {
     m_CurrentHP += amount;
     if (m_CurrentHP > m_MaxHP) {
-        m_CurrentHP = m_MaxHP;
+        m_CurrentHP = m_MaxHP; // Prevent healing past MaxHP
     }
     std::cout << m_Name << " heals for " << amount << " HP!" << std::endl;
 }
+
+// Getters
 
 std::string Character::GetName() {
     return m_Name;
@@ -60,9 +62,7 @@ void Character::LevelUp() {
     m_CurrentXP -= m_MaxXP; // Overflow XP carries over
     m_Level++;
     
-    // Learning Outcome: Math Functions
     // We explicitly calculate the next XP threshold using an exponential formula.
-    // New MaxXP = 100 * (1.5 ^ Level)
     m_MaxXP = static_cast<int>(100 * std::pow(1.5, m_Level));
     
     // Increase HP

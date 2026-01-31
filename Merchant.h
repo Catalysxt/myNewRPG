@@ -35,5 +35,5 @@ public:
 private:
     std::string m_Name;
     std::unique_ptr<PricingStrategy> m_PricingStrategy;
-    std::vector<ShopItem> m_Stock; // Items available for sale
+    std::vector<ShopItem> m_Stock; // Items available for sale. ShopItem is a struct
 };
