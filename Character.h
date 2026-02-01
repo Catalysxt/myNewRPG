@@ -65,11 +65,7 @@ public:
     //
     // Subclasses override ExecuteSpecialAbility() to define unique behavior.
     void PerformSpecialAbility(Character* target, CombatEngine& engine);
-    
-    // Get the name of this class's special ability (for UI display)
-    virtual std::string GetAbilityName() const { return "Basic Attack"; }
-    
-    // How much RP does this ability cost? Override per class.
+    virtual std::string GetAbilityName() const { return "Basic Attack"; } // For UI reasons
     virtual int GetAbilityCost() const { return 40; }
 
 protected:
