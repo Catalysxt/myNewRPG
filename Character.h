@@ -3,8 +3,11 @@
 #include <vector>
 #include <memory>
 #include "StatBlock.h"
+#include "DamageStrategy.h"
+#include "StatusEffect.h"
 
 class Item; // Forward Declaration
+class CombatEngine; // Forward Declaration for special abilities
 
 class Character {
 public:
@@ -29,7 +32,51 @@ public:
     
     // Base damage for unarmed attacks (can be overridden for weapon-based damage)
     virtual int GetBaseDamage() const;
+    
+    // Damage strategy (Physical, Magical, etc.)
+    const DamageStrategy& GetDamageStrategy() const;
+    
+    // =========================================================================
+    // RESOURCE POINT SYSTEM
+    // =========================================================================
+    // Resource Points (RP) are used for special abilities.
+    // Different classes interpret RP differently (Mana, Stamina, Rage)
+    int GetCurrentRP() const;
+    int GetMaxRP() const;
+    void SpendRP(int amount);
+    void RestoreRP(int amount); // If we level up, RP is restored to max
+    
+    // =========================================================================
+    // STATUS EFFECT SYSTEM
+    // =========================================================================
+    void ApplyStatus(StatusEffect effect);
+    void RemoveStatus(StatusEffect effect);
+    bool HasStatus(StatusEffect effect) const;
+    void ClearAllStatus();
+    StatusEffect GetCurrentStatus() const;
+    
+    // =========================================================================
+    // SPECIAL ABILITY SYSTEM (Template Method Pattern)
+    // =========================================================================
+    // PerformSpecialAbility is the TEMPLATE METHOD - it defines the skeleton:
+    //   1. Check if can use ability (enough RP?)
+    //   2. Consume RP
+    //   3. Execute the ability (subclass hook)
+    //
+    // Subclasses override ExecuteSpecialAbility() to define unique behavior.
+    void PerformSpecialAbility(Character* target, CombatEngine& engine);
+    
+    // Get the name of this class's special ability (for UI display)
+    virtual std::string GetAbilityName() const { return "Basic Attack"; }
+    
+    // How much RP does this ability cost? Override per class.
+    virtual int GetAbilityCost() const { return 40; }
 
+protected:
+    // Hook method - each class implements their unique ability here
+    virtual void ExecuteSpecialAbility(Character* target, CombatEngine& engine);
+
+public:
     // Inventory System
     void AddItem(std::unique_ptr<Item> item);
     void UseItem(int index);
@@ -41,7 +88,7 @@ public:
     void AddGold(int amount);
     bool SpendGold(int amount); // Returns false if insufficient funds
 
-    // XP System (public so battles can reward XP)
+    // XP System 
     void GainXP(int amount);
 
 protected:
@@ -61,4 +108,13 @@ protected:
 
     // Economy
     int m_Gold;
+    
+    // Combat Strategy
+    std::unique_ptr<DamageStrategy> m_DamageStrategy;
+    
+    // Resource Points (current value - max comes from StatBlock)
+    int m_CurrentRP;
+    
+    // Status Effects (bit flags)
+    StatusEffect m_Status;
 };

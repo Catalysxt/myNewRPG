@@ -1,11 +1,14 @@
 #include <iostream>
 #include <cmath> // Required for std::pow
 #include "Character.h"
-#include "Item.h" // Needed for Item methods
+#include "Item.h"
+#include "CombatEngine.h"
 
 Character::Character(std::string name, int hp, StatBlock stats)
-    : m_Name(name), m_MaxHP(hp), m_CurrentHP(hp), m_Stats(stats), m_Level(1), m_CurrentXP(0), m_MaxXP(100), m_Gold(100) {
-    // Member Initializer List
+    : m_Name(name), m_MaxHP(hp), m_CurrentHP(hp), m_Stats(stats), 
+      m_Level(1), m_CurrentXP(0), m_MaxXP(100), m_Gold(100),
+      m_CurrentRP(stats.GetMaxResourcePoints()),  // Start with full RP. We construct Statblock with 100 RP
+      m_Status(StatusEffect::None) {
 }
 
 Character::~Character() {
@@ -53,6 +56,84 @@ StatBlock Character::GetStats() const {
 // Used by CombatEngine::CalculateDamage()
 int Character::GetBaseDamage() const {
     return 5; // Default
+}
+
+const DamageStrategy& Character::GetDamageStrategy() const {
+    return *m_DamageStrategy;
+}
+
+// =========================================================================
+// RESOURCE POINT SYSTEM
+// =========================================================================
+
+int Character::GetCurrentRP() const {
+    return m_CurrentRP;
+}
+
+int Character::GetMaxRP() const {
+    return m_Stats.GetMaxResourcePoints();
+}
+
+void Character::SpendRP(int amount) {
+    m_CurrentRP -= amount;
+    if (m_CurrentRP < 0) m_CurrentRP = 0;
+}
+
+void Character::RestoreRP(int amount) {
+    m_CurrentRP += amount;
+    int max = GetMaxRP();
+    if (m_CurrentRP > max) {m_CurrentRP = max;}
+    std::cout << m_Name << " restored " << amount << " RP!" << std::endl;
+}
+
+// =========================================================================
+// STATUS EFFECT SYSTEM
+// =========================================================================
+
+void Character::ApplyStatus(StatusEffect effect) {
+    m_Status |= effect;
+}
+
+void Character::RemoveStatus(StatusEffect effect) {
+    m_Status &= ~effect;
+}
+
+bool Character::HasStatus(StatusEffect effect) const {
+    return HasEffect(m_Status, effect);
+}
+
+void Character::ClearAllStatus() {
+    m_Status = StatusEffect::None;
+}
+
+StatusEffect Character::GetCurrentStatus() const {
+    return m_Status;
+}
+
+// =========================================================================
+// SPECIAL ABILITY SYSTEM (Template Method Pattern)
+// =========================================================================
+// This is the TEMPLATE METHOD - it controls the algorithm skeleton:
+//   1. Check if enough RP
+//   2. Deduct RP
+//   3. Call the subclass hook (ExecuteSpecialAbility)
+
+void Character::PerformSpecialAbility(Character* target, CombatEngine& engine) {
+    int cost = GetAbilityCost();
+    
+    if (m_CurrentRP < cost) {
+        std::cout << m_Name << " doesn't have enough RP! (Have: " 
+                  << m_CurrentRP << ", Need: " << cost << ")" << std::endl;
+        return;
+    }
+    
+    SpendRP(cost);
+    ExecuteSpecialAbility(target, engine);
+}
+
+// Default implementation - does nothing (subclasses override this)
+void Character::ExecuteSpecialAbility(Character* /*target*/, CombatEngine& /*engine*/) {
+    std::cout << m_Name << " has no special ability!" << std::endl;
 }
 
 void Character::GainXP(int amount) {

@@ -1,7 +1,11 @@
 #include "Monster.h"
+#include "DamageStrategy.h"
 
+// Monsters default to PHYSICAL damage
+// Specific monsters (like a Mage enemy) could override this
 Monster::Monster(std::string name, int hp, StatBlock stats)
     : Character(name, hp, stats) {
+    m_DamageStrategy = std::make_unique<PhysicalDamageStrategy>();
 }
 
 void Monster::LevelUp() {

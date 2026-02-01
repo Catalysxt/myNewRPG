@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Rogue.h"
 
-// Rogue utilizes the Base Character constructor.
-// HP: 120 (Medium-Low)
-// STR: 6, INT: 2, AGI: 10, ARM: 2, RES: 1
+// Rogue uses PHYSICAL damage - daggers and swords scale with Strength
+// Their high Agility gives crit/dodge bonuses separately
 Rogue::Rogue(std::string name)
     : Character(name, 120, StatBlock(6, 2, 10, 2, 1)) {
+    m_DamageStrategy = std::make_unique<PhysicalDamageStrategy>();
 }
 
 std::string Rogue::GetClassName() {

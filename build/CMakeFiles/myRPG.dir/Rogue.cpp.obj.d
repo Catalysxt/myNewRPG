@@ -162,4 +162,9 @@ CMakeFiles/myRPG.dir/Rogue.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
- C:\Users\User\Coding\myNewRPG\StatBlock.h
+ C:\Users\User\Coding\myNewRPG\StatBlock.h \
+ C:\Users\User\Coding\myNewRPG\DamageStrategy.h \
+ C:\Users\User\Coding\myNewRPG\StatusEffect.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h

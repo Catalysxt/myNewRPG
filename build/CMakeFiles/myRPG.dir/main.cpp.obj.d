@@ -162,6 +162,11 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\User\Coding\myNewRPG\DamageStrategy.h \
+ C:\Users\User\Coding\myNewRPG\StatusEffect.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
  C:\Users\User\Coding\myNewRPG\Warrior.h \
  C:\Users\User\Coding\myNewRPG\Wizard.h \
  C:\Users\User\Coding\myNewRPG\Cleric.h \
@@ -192,9 +197,6 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
- C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h \
@@ -206,5 +208,4 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
- C:\Users\User\Coding\myNewRPG\DamageStrategy.h
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h

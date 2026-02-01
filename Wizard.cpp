@@ -1,11 +1,10 @@
 #include <iostream>
 #include "Wizard.h"
 
-// Wizard utilizes the Base Character constructor.
-// HP: 100 (Low)
-// STR: 1, INT: 10, AGI: 3, ARM: 1, RES: 5
+// Wizard uses MAGICAL damage - their attacks scale with Intellect
 Wizard::Wizard(std::string name)
     : Character(name, 100, StatBlock(1, 10, 3, 1, 5)) {
+    m_DamageStrategy = std::make_unique<MagicalDamageStrategy>();
 }
 
 std::string Wizard::GetClassName() {

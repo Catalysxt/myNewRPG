@@ -1,7 +1,8 @@
 #include "StatBlock.h"
 
-StatBlock::StatBlock(int s, int i, int a, int arm, int res)
-    : m_Strength(s), m_Intellect(i), m_Agility(a), m_Armor(arm), m_ElementRes(res) {
+StatBlock::StatBlock(int s, int i, int a, int arm, int res, int maxRP)
+    : m_Strength(s), m_Intellect(i), m_Agility(a), m_Armor(arm), 
+      m_ElementRes(res), m_MaxResourcePoints(maxRP) {
 }
 
 int StatBlock::GetStrength() const { return m_Strength; }
@@ -13,6 +14,8 @@ int StatBlock::GetAgility() const { return m_Agility; }
 int StatBlock::GetArmor() const { return m_Armor; }
 
 int StatBlock::GetElementRes() const { return m_ElementRes; }
+
+int StatBlock::GetMaxResourcePoints() const { return m_MaxResourcePoints; }
 
 
 void StatBlock::IncreaseStats(int s, int i, int a, int arm, int res) {

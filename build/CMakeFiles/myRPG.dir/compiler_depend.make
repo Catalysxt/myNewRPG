@@ -52,6 +52,8 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -67,6 +69,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
@@ -76,6 +79,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
@@ -88,6 +92,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/cmath \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -110,10 +115,13 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/limits \
   C:/msys64/ucrt64/include/c++/15.2.0/memory \
   C:/msys64/ucrt64/include/c++/15.2.0/new \
+  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/random \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/15.2.0/streambuf \
@@ -146,6 +154,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
@@ -173,6 +182,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -182,13 +192,22 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/vadefs.h \
   C:/msys64/ucrt64/include/wchar.h \
   C:/msys64/ucrt64/include/wctype.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/CombatEngine.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Item.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/Cleric.cpp.obj: C:/Users/User/Coding/myNewRPG/Cleric.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -275,6 +294,7 @@ CMakeFiles/myRPG.dir/Cleric.cpp.obj: C:/Users/User/Coding/myNewRPG/Cleric.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -346,6 +366,7 @@ CMakeFiles/myRPG.dir/Cleric.cpp.obj: C:/Users/User/Coding/myNewRPG/Cleric.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -358,10 +379,13 @@ CMakeFiles/myRPG.dir/Cleric.cpp.obj: C:/Users/User/Coding/myNewRPG/Cleric.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
   C:/Users/User/Coding/myNewRPG/Cleric.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/CombatEngine.cpp.obj: C:/Users/User/Coding/myNewRPG/CombatEngine.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -981,6 +1005,7 @@ CMakeFiles/myRPG.dir/Merchant.cpp.obj: C:/Users/User/Coding/myNewRPG/Merchant.cp
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1052,6 +1077,7 @@ CMakeFiles/myRPG.dir/Merchant.cpp.obj: C:/Users/User/Coding/myNewRPG/Merchant.cp
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1064,14 +1090,17 @@ CMakeFiles/myRPG.dir/Merchant.cpp.obj: C:/Users/User/Coding/myNewRPG/Merchant.cp
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Item.h \
   C:/Users/User/Coding/myNewRPG/ItemFactory.h \
   C:/Users/User/Coding/myNewRPG/Merchant.h \
   C:/Users/User/Coding/myNewRPG/Potion.h \
   C:/Users/User/Coding/myNewRPG/PricingStrategy.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h \
   C:/Users/User/Coding/myNewRPG/TradeResult.h
 
 CMakeFiles/myRPG.dir/Monster.cpp.obj: C:/Users/User/Coding/myNewRPG/Monster.cpp \
@@ -1147,6 +1176,7 @@ CMakeFiles/myRPG.dir/Monster.cpp.obj: C:/Users/User/Coding/myNewRPG/Monster.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1207,6 +1237,7 @@ CMakeFiles/myRPG.dir/Monster.cpp.obj: C:/Users/User/Coding/myNewRPG/Monster.cpp 
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1218,10 +1249,13 @@ CMakeFiles/myRPG.dir/Monster.cpp.obj: C:/Users/User/Coding/myNewRPG/Monster.cpp 
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Monster.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/Orc.cpp.obj: C:/Users/User/Coding/myNewRPG/Orc.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1296,6 +1330,7 @@ CMakeFiles/myRPG.dir/Orc.cpp.obj: C:/Users/User/Coding/myNewRPG/Orc.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1356,6 +1391,7 @@ CMakeFiles/myRPG.dir/Orc.cpp.obj: C:/Users/User/Coding/myNewRPG/Orc.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1367,11 +1403,14 @@ CMakeFiles/myRPG.dir/Orc.cpp.obj: C:/Users/User/Coding/myNewRPG/Orc.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Monster.h \
   C:/Users/User/Coding/myNewRPG/Orc.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/Potion.cpp.obj: C:/Users/User/Coding/myNewRPG/Potion.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1458,6 +1497,7 @@ CMakeFiles/myRPG.dir/Potion.cpp.obj: C:/Users/User/Coding/myNewRPG/Potion.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1529,6 +1569,7 @@ CMakeFiles/myRPG.dir/Potion.cpp.obj: C:/Users/User/Coding/myNewRPG/Potion.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1541,11 +1582,14 @@ CMakeFiles/myRPG.dir/Potion.cpp.obj: C:/Users/User/Coding/myNewRPG/Potion.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Item.h \
   C:/Users/User/Coding/myNewRPG/Potion.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/Rogue.cpp.obj: C:/Users/User/Coding/myNewRPG/Rogue.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1632,6 +1676,7 @@ CMakeFiles/myRPG.dir/Rogue.cpp.obj: C:/Users/User/Coding/myNewRPG/Rogue.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1703,6 +1748,7 @@ CMakeFiles/myRPG.dir/Rogue.cpp.obj: C:/Users/User/Coding/myNewRPG/Rogue.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1715,10 +1761,13 @@ CMakeFiles/myRPG.dir/Rogue.cpp.obj: C:/Users/User/Coding/myNewRPG/Rogue.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Rogue.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/Slime.cpp.obj: C:/Users/User/Coding/myNewRPG/Slime.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -1793,6 +1842,7 @@ CMakeFiles/myRPG.dir/Slime.cpp.obj: C:/Users/User/Coding/myNewRPG/Slime.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1853,6 +1903,7 @@ CMakeFiles/myRPG.dir/Slime.cpp.obj: C:/Users/User/Coding/myNewRPG/Slime.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -1864,11 +1915,14 @@ CMakeFiles/myRPG.dir/Slime.cpp.obj: C:/Users/User/Coding/myNewRPG/Slime.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/Monster.h \
   C:/Users/User/Coding/myNewRPG/Slime.h \
-  C:/Users/User/Coding/myNewRPG/StatBlock.h
+  C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h
 
 CMakeFiles/myRPG.dir/StatBlock.cpp.obj: C:/Users/User/Coding/myNewRPG/StatBlock.cpp \
   C:/Users/User/Coding/myNewRPG/StatBlock.h
@@ -1924,12 +1978,15 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
@@ -1938,6 +1995,7 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
@@ -1947,6 +2005,7 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
@@ -1956,8 +2015,10 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/cctype \
   C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
+  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -1977,18 +2038,34 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
   C:/msys64/ucrt64/include/c++/15.2.0/iostream \
   C:/msys64/ucrt64/include/c++/15.2.0/istream \
+  C:/msys64/ucrt64/include/c++/15.2.0/limits \
   C:/msys64/ucrt64/include/c++/15.2.0/memory \
   C:/msys64/ucrt64/include/c++/15.2.0/new \
+  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/random \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/15.2.0/streambuf \
   C:/msys64/ucrt64/include/c++/15.2.0/string \
   C:/msys64/ucrt64/include/c++/15.2.0/string_view \
   C:/msys64/ucrt64/include/c++/15.2.0/system_error \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/beta_function.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/ell_integral.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/exp_integral.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/gamma.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/hypergeometric.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/legendre_function.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/modified_bessel_func.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_hermite.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/poly_laguerre.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/riemann_zeta.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h \
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
@@ -2003,6 +2080,7 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/ucrt64/include/corecrt.h \
   C:/msys64/ucrt64/include/corecrt_startup.h \
@@ -2015,6 +2093,7 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/limits.h \
   C:/msys64/ucrt64/include/locale.h \
   C:/msys64/ucrt64/include/malloc.h \
+  C:/msys64/ucrt64/include/math.h \
   C:/msys64/ucrt64/include/process.h \
   C:/msys64/ucrt64/include/pthread.h \
   C:/msys64/ucrt64/include/pthread_compat.h \
@@ -2029,6 +2108,7 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -2038,12 +2118,21 @@ CMakeFiles/myRPG.dir/Warrior.cpp.obj: C:/Users/User/Coding/myNewRPG/Warrior.cpp 
   C:/msys64/ucrt64/include/vadefs.h \
   C:/msys64/ucrt64/include/wchar.h \
   C:/msys64/ucrt64/include/wctype.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/CombatEngine.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h \
   C:/Users/User/Coding/myNewRPG/Warrior.h
 
 CMakeFiles/myRPG.dir/Wizard.cpp.obj: C:/Users/User/Coding/myNewRPG/Wizard.cpp \
@@ -2131,6 +2220,7 @@ CMakeFiles/myRPG.dir/Wizard.cpp.obj: C:/Users/User/Coding/myNewRPG/Wizard.cpp \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
   C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
@@ -2202,6 +2292,7 @@ CMakeFiles/myRPG.dir/Wizard.cpp.obj: C:/Users/User/Coding/myNewRPG/Wizard.cpp \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
   C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
   C:/msys64/ucrt64/include/swprintf.inl \
@@ -2214,9 +2305,12 @@ CMakeFiles/myRPG.dir/Wizard.cpp.obj: C:/Users/User/Coding/myNewRPG/Wizard.cpp \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   C:/Users/User/Coding/myNewRPG/Character.h \
+  C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h \
   C:/Users/User/Coding/myNewRPG/Wizard.h
 
 CMakeFiles/myRPG.dir/main.cpp.obj: C:/Users/User/Coding/myNewRPG/main.cpp \
@@ -2434,6 +2528,7 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:/Users/User/Coding/myNewRPG/main.cpp \
   C:/Users/User/Coding/myNewRPG/Rogue.h \
   C:/Users/User/Coding/myNewRPG/Slime.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h \
+  C:/Users/User/Coding/myNewRPG/StatusEffect.h \
   C:/Users/User/Coding/myNewRPG/TradeResult.h \
   C:/Users/User/Coding/myNewRPG/Warrior.h \
   C:/Users/User/Coding/myNewRPG/Wizard.h
@@ -2444,6 +2539,10 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h:
 
 C:/msys64/ucrt64/include/_mingw_mac.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h:
 
@@ -2551,10 +2650,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h:
@@ -2611,17 +2706,27 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc:
 
+C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h:
 
@@ -2638,6 +2743,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h:
 
@@ -2664,6 +2771,10 @@ C:/msys64/ucrt64/include/c++/15.2.0/cmath:
 C:/msys64/ucrt64/include/c++/15.2.0/concepts:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cstddef:
+
+C:/msys64/ucrt64/include/pthread_unistd.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/cstdint:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cstdio:
 
@@ -2701,10 +2812,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/initializer_list:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ios:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/random.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/iosfwd:
-
 C:/msys64/ucrt64/include/c++/15.2.0/iostream:
 
 C:/msys64/ucrt64/include/c++/15.2.0/limits:
@@ -2715,13 +2822,19 @@ C:/msys64/ucrt64/include/c++/15.2.0/memory:
 
 C:/msys64/ucrt64/include/c++/15.2.0/new:
 
+C:/msys64/ucrt64/include/c++/15.2.0/numeric:
+
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/random:
 
 C:/msys64/ucrt64/include/c++/15.2.0/stdexcept:
 
@@ -2752,10 +2865,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h:
 C:/msys64/ucrt64/include/c++/15.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/15.2.0/type_traits:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc:
-
-C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
 
 C:/msys64/ucrt64/include/c++/15.2.0/vector:
 
@@ -2815,10 +2924,6 @@ C:/msys64/ucrt64/include/pthread_signal.h:
 
 C:/msys64/ucrt64/include/pthread_time.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/cstdint:
-
-C:/msys64/ucrt64/include/pthread_unistd.h:
-
 C:/msys64/ucrt64/include/sched.h:
 
 C:/msys64/ucrt64/include/sdks/_mingw_ddk.h:
@@ -2851,11 +2956,21 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
 C:/Users/User/Coding/myNewRPG/Character.h:
+
+C:/Users/User/Coding/myNewRPG/DamageStrategy.h:
+
+C:/Users/User/Coding/myNewRPG/StatusEffect.h:
 
 C:/Users/User/Coding/myNewRPG/Cleric.cpp:
 
@@ -2869,25 +2984,7 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/numeric:
-
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/random:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
-
-C:/Users/User/Coding/myNewRPG/DamageStrategy.h:
 
 C:/Users/User/Coding/myNewRPG/Potion.h:
 

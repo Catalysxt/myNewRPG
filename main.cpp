@@ -86,9 +86,11 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEng
     while (state != BattleState::Victory && state != BattleState::Defeat) {
         if (state == BattleState::PlayerTurn) {
             std::cout << "\n=======================================================" << std::endl;
-            std::cout << "[Your Turn] HP: " << player->GetCurrentHP() << "/" << player->GetMaxHP() << std::endl;
+            std::cout << "[Your Turn] HP: " << player->GetCurrentHP() << "/" << player->GetMaxHP()
+                      << "  |  RP: " << player->GetCurrentRP() << "/" << player->GetMaxRP() << std::endl;
             std::cout << "1. Attack" << std::endl;
-            std::cout << "2. Heal (Not implemented)" << std::endl;
+            std::cout << "2. " << player->GetAbilityName() 
+                      << " (" << player->GetAbilityCost() << " RP)" << std::endl;
             std::cout << "3. Inventory" << std::endl; 
             std::cout << "4. Shop" << std::endl;
             std::cout << "=======================================================" << std::endl;
@@ -101,15 +103,17 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEng
                 action = 0;
             }
 
-            // ATTACK LOGIC - Uses CombatEngine
+            // ATTACK LOGIC
             if (action == 1) {
                 // Calculate attack using the CombatEngine
-                // baseDamage comes from GetBaseDamage() (weapon/fist damage)
-                // Strategy uses PhysicalDamageStrategy by default
-                AttackResult result = combatEngine.CalculatePhysicalAttack(
-                    player->GetStats(),  // Attacker's stats (for Strength modifier)
-                    enemy->GetStats(),   // Defender's stats (for Armor mitigation)
-                    player->GetBaseDamage() // Base damage (weapon or fists)
+                // Now uses the CHARACTER'S preferred damage strategy!
+                // Wizard → MagicalDamageStrategy (scales with INT)
+                // Warrior → PhysicalDamageStrategy (scales with STR)
+                AttackResult result = combatEngine.CalculateAttack(
+                    player->GetStats(),           // Attacker's stats
+                    enemy->GetStats(),            // Defender's stats
+                    player->GetDamageStrategy(),  // The character's preferred strategy!
+                    player->GetBaseDamage()       // Base damage (weapon or fists)
                 );
                 
                 // Check for dodge
@@ -126,6 +130,17 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEng
                     std::cout << "Enemy HP: " << enemy->GetCurrentHP() << "/" << enemy->GetMaxHP() << std::endl;
                 }
 
+                if (enemy->GetCurrentHP() <= 0) {
+                    state = BattleState::Victory;
+                } else {
+                    state = BattleState::EnemyTurn;
+                }
+            }
+            
+            // SPECIAL ABILITY
+            else if (action == 2) {
+                player->PerformSpecialAbility(enemy, combatEngine);
+                
                 if (enemy->GetCurrentHP() <= 0) {
                     state = BattleState::Victory;
                 } else {
@@ -171,10 +186,19 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEng
             std::cout << "[Enemy Turn]" << std::endl;
             std::cout << "=======================================================" << std::endl;
             
-            // Enemy also uses CombatEngine for attacks
-            AttackResult result = combatEngine.CalculatePhysicalAttack(
+            // Check if enemy is STUNNED - skip their turn if so
+            if (enemy->HasStatus(StatusEffect::Stunned)) {
+                std::cout << "The " << enemy->GetClassName() << " is STUNNED and cannot act!" << std::endl;
+                enemy->RemoveStatus(StatusEffect::Stunned);  // Stun wears off after 1 turn
+                state = BattleState::PlayerTurn;
+                continue;
+            }
+            
+            // Enemy attack logic
+            AttackResult result = combatEngine.CalculateAttack(
                 enemy->GetStats(),
                 player->GetStats(),
+                enemy->GetDamageStrategy(),
                 enemy->GetBaseDamage()
             );
             

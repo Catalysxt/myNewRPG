@@ -168,4 +168,9 @@ CMakeFiles/myRPG.dir/Merchant.cpp.obj: \
  C:\Users\User\Coding\myNewRPG\Item.h \
  C:\Users\User\Coding\myNewRPG\Potion.h \
  C:\Users\User\Coding\myNewRPG\Character.h \
- C:\Users\User\Coding\myNewRPG\StatBlock.h
+ C:\Users\User\Coding\myNewRPG\StatBlock.h \
+ C:\Users\User\Coding\myNewRPG\DamageStrategy.h \
+ C:\Users\User\Coding\myNewRPG\StatusEffect.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h

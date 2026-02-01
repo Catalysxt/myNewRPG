@@ -3,7 +3,8 @@
 // The StatBlock class holds the core statistics for any character or monster.
 class StatBlock {
 public:
-    StatBlock(int s, int i, int a, int arm, int res);
+    // Constructor: STR, INT, AGI, ARM, RES, MaxRP
+    StatBlock(int s, int i, int a, int arm, int res, int maxRP = 100);
 
     // Getters
     int GetStrength() const;
@@ -11,6 +12,7 @@ public:
     int GetAgility() const;
     int GetArmor() const;
     int GetElementRes() const;
+    int GetMaxResourcePoints() const;
 
     // Methods to increase stats (needed for Leveling)
     void IncreaseStats(int s, int i, int a, int arm, int res);
@@ -27,4 +29,5 @@ private:
     int m_Agility;
     int m_Armor;
     int m_ElementRes;
+    int m_MaxResourcePoints;  // Max RP for special abilities
 };

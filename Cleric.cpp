@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Cleric.h"
 
-// Cleric utilizes the Base Character constructor.
-// HP: 140 (Medium)
-// STR: 4, INT: 6, AGI: 2, ARM: 3, RES: 4
+// Cleric uses MAGICAL damage - divine smite scales with Intellect
+// Balanced stats but magic-focused attacks
 Cleric::Cleric(std::string name)
     : Character(name, 140, StatBlock(4, 6, 2, 3, 4)) {
+    m_DamageStrategy = std::make_unique<MagicalDamageStrategy>();
 }
 
 std::string Cleric::GetClassName() {
