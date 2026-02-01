@@ -33,20 +33,26 @@ std::string Character::GetName() {
     return m_Name;
 }
 
-int Character::GetCurrentHP() {
+int Character::GetCurrentHP() const {
     return m_CurrentHP;
 }
 
-int Character::GetMaxHP() {
+int Character::GetMaxHP() const {
     return m_MaxHP;
 }
 
-int Character::GetLevel() {
+int Character::GetLevel() const {
     return m_Level;
 }
 
-StatBlock Character::GetStats() {
+StatBlock Character::GetStats() const {
     return m_Stats;
+}
+
+// Base damage for unarmed attacks. Override this in subclasses or when implementing a weapon system. 
+// Used by CombatEngine::CalculateDamage()
+int Character::GetBaseDamage() const {
+    return 5; // Default
 }
 
 void Character::GainXP(int amount) {

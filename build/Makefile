@@ -176,6 +176,30 @@ Cleric.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Cleric.cpp.s
 .PHONY : Cleric.cpp.s
 
+CombatEngine.obj: CombatEngine.cpp.obj
+.PHONY : CombatEngine.obj
+
+# target to build an object file
+CombatEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.obj
+.PHONY : CombatEngine.cpp.obj
+
+CombatEngine.i: CombatEngine.cpp.i
+.PHONY : CombatEngine.i
+
+# target to preprocess a source file
+CombatEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.i
+.PHONY : CombatEngine.cpp.i
+
+CombatEngine.s: CombatEngine.cpp.s
+.PHONY : CombatEngine.s
+
+# target to generate assembly for a file
+CombatEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.s
+.PHONY : CombatEngine.cpp.s
+
 Item.obj: Item.cpp.obj
 .PHONY : Item.obj
 
@@ -479,6 +503,9 @@ help:
 	@echo ... Cleric.obj
 	@echo ... Cleric.i
 	@echo ... Cleric.s
+	@echo ... CombatEngine.obj
+	@echo ... CombatEngine.i
+	@echo ... CombatEngine.s
 	@echo ... Item.obj
 	@echo ... Item.i
 	@echo ... Item.s

@@ -5,11 +5,12 @@ class StatBlock {
 public:
     StatBlock(int s, int i, int a, int arm, int res);
 
-    int GetStrength();
-    int GetIntellect();
-    int GetAgility();
-    int GetArmor();
-    int GetElementRes();
+    // Getters
+    int GetStrength() const;
+    int GetIntellect() const;
+    int GetAgility() const;
+    int GetArmor() const;
+    int GetElementRes() const;
 
     // Methods to increase stats (needed for Leveling)
     void IncreaseStats(int s, int i, int a, int arm, int res);

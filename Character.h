@@ -21,11 +21,14 @@ public:
     // Abstract Method
     virtual std::string GetClassName() = 0;
     
-    // Getters
-    int GetCurrentHP();
-    int GetMaxHP();
-    int GetLevel();
-    StatBlock GetStats();
+    // Getters 
+    int GetCurrentHP() const;
+    int GetMaxHP() const;
+    int GetLevel() const;
+    StatBlock GetStats() const;
+    
+    // Base damage for unarmed attacks (can be overridden for weapon-based damage)
+    virtual int GetBaseDamage() const;
 
     // Inventory System
     void AddItem(std::unique_ptr<Item> item);

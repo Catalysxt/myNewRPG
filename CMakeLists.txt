@@ -25,4 +25,5 @@ add_executable(myRPG
     Potion.cpp
     ItemFactory.cpp
     Merchant.cpp
+    CombatEngine.cpp
 )

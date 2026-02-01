@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/User/Coding/myNewRPG/Character.cpp" "CMakeFiles/myRPG.dir/Character.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Character.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Cleric.cpp" "CMakeFiles/myRPG.dir/Cleric.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Cleric.cpp.obj.d"
+  "C:/Users/User/Coding/myNewRPG/CombatEngine.cpp" "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Item.cpp" "CMakeFiles/myRPG.dir/Item.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Item.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/ItemFactory.cpp" "CMakeFiles/myRPG.dir/ItemFactory.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/ItemFactory.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Merchant.cpp" "CMakeFiles/myRPG.dir/Merchant.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Merchant.cpp.obj.d"

@@ -12,7 +12,8 @@
 #include "Orc.h"
 #include "Slime.h"
 #include "Potion.h" 
-#include "Merchant.h" // NEW: For Shop System
+#include "Merchant.h"
+#include "CombatEngine.h"
 
 enum class CharacterType {
     Warrior = 1, // Start at 1 to match user input convenience
@@ -76,7 +77,7 @@ enum class BattleState {
 
 // Main Gameplay loop
 
-void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
+void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEngine& combatEngine) {
     BattleState state = BattleState::PlayerTurn;
     
     std::cout << "\n--- BATTLE START ---" << std::endl;
@@ -100,12 +101,30 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
                 action = 0;
             }
 
-            // ATTACK LOGIC
+            // ATTACK LOGIC - Uses CombatEngine
             if (action == 1) {
-                int dmg = player->GetStats().GetStrength();
-                std::cout << "You attack the " << enemy->GetClassName() << " for " << dmg << " damage!" << std::endl;
-                enemy->TakeDamage(dmg);
-                std::cout << "Enemy HP: " << enemy->GetCurrentHP() << "/" << enemy->GetMaxHP() << std::endl; 
+                // Calculate attack using the CombatEngine
+                // baseDamage comes from GetBaseDamage() (weapon/fist damage)
+                // Strategy uses PhysicalDamageStrategy by default
+                AttackResult result = combatEngine.CalculatePhysicalAttack(
+                    player->GetStats(),  // Attacker's stats (for Strength modifier)
+                    enemy->GetStats(),   // Defender's stats (for Armor mitigation)
+                    player->GetBaseDamage() // Base damage (weapon or fists)
+                );
+                
+                // Check for dodge
+                if (result.wasDodged) {
+                    std::cout << "The " << enemy->GetClassName() << " dodges your attack!" << std::endl;
+                } else {
+                    std::cout << "You attack the " << enemy->GetClassName();
+                    // Check for critical hit
+                    if (result.isCritical) {
+                        std::cout << " with a CRITICAL HIT";
+                    }
+                    std::cout << " for " << result.finalDamage << " damage!" << std::endl;
+                    enemy->TakeDamage(result.finalDamage);
+                    std::cout << "Enemy HP: " << enemy->GetCurrentHP() << "/" << enemy->GetMaxHP() << std::endl;
+                }
 
                 if (enemy->GetCurrentHP() <= 0) {
                     state = BattleState::Victory;
@@ -152,10 +171,23 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant) {
             std::cout << "[Enemy Turn]" << std::endl;
             std::cout << "=======================================================" << std::endl;
             
-            // Simple AI: Enemy attack value is equivalent to its Strength attribute
-            int dmg = enemy->GetStats().GetStrength();
-            std::cout << "The " << enemy->GetClassName() << " attacks you for " << dmg << " damage!" << std::endl;
-            player->TakeDamage(dmg);
+            // Enemy also uses CombatEngine for attacks
+            AttackResult result = combatEngine.CalculatePhysicalAttack(
+                enemy->GetStats(),
+                player->GetStats(),
+                enemy->GetBaseDamage()
+            );
+            
+            if (result.wasDodged) {
+                std::cout << "You dodge the " << enemy->GetClassName() << "'s attack!" << std::endl;
+            } else {
+                std::cout << "The " << enemy->GetClassName() << " attacks you";
+                if (result.isCritical) {
+                    std::cout << " with a CRITICAL HIT";
+                }
+                std::cout << " for " << result.finalDamage << " damage!" << std::endl;
+                player->TakeDamage(result.finalDamage);
+            }
 
             if (player->GetCurrentHP() <= 0) {
                 state = BattleState::Defeat;
@@ -240,8 +272,12 @@ int main() {
         std::unique_ptr<Monster> enemy = std::make_unique<Orc>();
         std::cout << "It's an " << enemy->GetClassName() << " with " << enemy->GetMaxHP() << " HP." << std::endl;
         
-        // Start the interactive battle
-        PlayBattle(player.get(), enemy.get(), greedyMerchant);
+        // Create the CombatEngine - it handles all damage calculations
+        // The engine is seeded once here and maintains its RNG state throughout combat
+        CombatEngine combatEngine;
+        
+        // Start the interactive battle (now with CombatEngine!)
+        PlayBattle(player.get(), enemy.get(), greedyMerchant, combatEngine);
     }
 
     return 0;

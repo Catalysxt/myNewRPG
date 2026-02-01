@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/myRPG.dir/Character.cpp.obj.d"
   "CMakeFiles/myRPG.dir/Cleric.cpp.obj"
   "CMakeFiles/myRPG.dir/Cleric.cpp.obj.d"
+  "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj"
+  "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj.d"
   "CMakeFiles/myRPG.dir/Item.cpp.obj"
   "CMakeFiles/myRPG.dir/Item.cpp.obj.d"
   "CMakeFiles/myRPG.dir/ItemFactory.cpp.obj"
