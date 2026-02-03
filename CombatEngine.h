@@ -76,6 +76,9 @@ public:
     void SetBaseCritChance(int chance) { m_BaseCritChance = chance; }
     int GetBaseCritChance() const { return m_BaseCritChance; }
 
+    // Access to random engine (for other systems that need randomness)
+    std::mt19937& GetRandomEngine() { return m_RandomEngine; }
+
 private:
     // ========================================================================
     // RANDOM NUMBER GENERATION - The Modern C++ Way

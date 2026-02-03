@@ -163,4 +163,6 @@ CMakeFiles/myRPG.dir/ItemFactory.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- C:\Users\User\Coding\myNewRPG\Potion.h
+ C:\Users\User\Coding\myNewRPG\Potion.h \
+ C:\Users\User\Coding\myNewRPG\IronHammer.h \
+ C:\Users\User\Coding\myNewRPG\SlimeBubble.h

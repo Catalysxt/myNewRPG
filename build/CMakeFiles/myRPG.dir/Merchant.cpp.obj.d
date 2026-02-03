@@ -167,6 +167,8 @@ CMakeFiles/myRPG.dir/Merchant.cpp.obj: \
  C:\Users\User\Coding\myNewRPG\ItemFactory.h \
  C:\Users\User\Coding\myNewRPG\Item.h \
  C:\Users\User\Coding\myNewRPG\Potion.h \
+ C:\Users\User\Coding\myNewRPG\IronHammer.h \
+ C:\Users\User\Coding\myNewRPG\SlimeBubble.h \
  C:\Users\User\Coding\myNewRPG\Character.h \
  C:\Users\User\Coding\myNewRPG\StatBlock.h \
  C:\Users\User\Coding\myNewRPG\DamageStrategy.h \

@@ -11,9 +11,11 @@
 #include "Rogue.h"
 #include "Orc.h"
 #include "Slime.h"
+#include "Goblin.h"
 #include "Potion.h" 
 #include "Merchant.h"
 #include "CombatEngine.h"
+#include "MonsterFactory.h"
 
 enum class CharacterType {
     Warrior = 1, // Start at 1 to match user input convenience
@@ -223,7 +225,21 @@ void PlayBattle(Character* player, Monster* enemy, Merchant& merchant, CombatEng
 
     if (state == BattleState::Victory) {
         std::cout << "\nVICTORY! You defeated the " << enemy->GetClassName() << "!" << std::endl;
-        player->GainXP(50); // Reward
+        
+        // Award XP
+        player->GainXP(50);
+        
+        // Award gold (random amount based on monster type)
+        int goldDrop = enemy->GetGoldDrop(combatEngine);
+        player->AddGold(goldDrop);
+        std::cout << "You found " << goldDrop << " gold!" << std::endl;
+        
+        // Check for loot drop
+        auto loot = enemy->GetLootDrop(combatEngine);
+        if (loot) {
+            std::cout << "The " << enemy->GetClassName() << " dropped: " << loot->GetName() << "!" << std::endl;
+            player->AddItem(std::move(loot));
+        }
     } else {
         std::cout << "\nDEFEAT! You have fallen..." << std::endl;
     }
@@ -290,17 +306,21 @@ int main() {
 
         // --- COMBAT PHASE ---
         std::cout << "\n----------------------------------------" << std::endl;
-        std::cout << "A wild monster appears!" << std::endl;
-
-        // Create Monster
-        std::unique_ptr<Monster> enemy = std::make_unique<Orc>();
-        std::cout << "It's an " << enemy->GetClassName() << " with " << enemy->GetMaxHP() << " HP." << std::endl;
         
-        // Create the CombatEngine - it handles all damage calculations
-        // The engine is seeded once here and maintains its RNG state throughout combat
+        // Create the CombatEngine 
         CombatEngine combatEngine;
         
-        // Start the interactive battle (now with CombatEngine!)
+        // Create MonsterFactory and register monster types 
+        MonsterFactory factory(combatEngine);
+        factory.Register("Slime", 60, 0.15f, []() { return std::make_unique<Slime>(); });
+        factory.Register("Orc", 30, 0.15f, []() { return std::make_unique<Orc>(); });
+        factory.Register("Goblin", 10, 0.15f, []() { return std::make_unique<Goblin>(); });
+        
+        // Spawn a random monster!
+        std::unique_ptr<Monster> enemy = factory.SpawnRandom();
+        std::cout << "HP: " << enemy->GetMaxHP() << std::endl;
+        
+        // Start the interactive battle
         PlayBattle(player.get(), enemy.get(), greedyMerchant, combatEngine);
     }
 

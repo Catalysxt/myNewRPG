@@ -44,6 +44,13 @@ int Character::GetMaxHP() const {
     return m_MaxHP;
 }
 
+void Character::SetMaxHP(int hp) {
+    m_MaxHP = hp;
+    if (m_CurrentHP > m_MaxHP) {
+        m_CurrentHP = m_MaxHP;
+    }
+}
+
 int Character::GetLevel() const {
     return m_Level;
 }

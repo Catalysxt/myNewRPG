@@ -12,5 +12,5 @@ public:
 
 protected:
     void ExecuteSpecialAbility(Character* target, CombatEngine& engine) override;
-    int GetAbilityCost() const override { return 35; }
+    int GetAbilityCost() const override { return 55; }
 };

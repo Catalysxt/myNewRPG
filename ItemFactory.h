@@ -4,6 +4,9 @@
 #include <vector>
 #include "Item.h"
 #include "Potion.h"
+#include "IronHammer.h"
+#include "SlimeBubble.h"
+
 // Add more item includes here as you create them (e.g., Sword.h)
 
 // Justification: Factory Pattern

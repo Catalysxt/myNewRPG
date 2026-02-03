@@ -211,10 +211,24 @@ CMakeFiles/myRPG.dir/Slime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/Slime.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\Slime.cpp -o CMakeFiles\myRPG.dir\Slime.cpp.s
 
+CMakeFiles/myRPG.dir/Goblin.cpp.obj: CMakeFiles/myRPG.dir/flags.make
+CMakeFiles/myRPG.dir/Goblin.cpp.obj: C:/Users/User/Coding/myNewRPG/Goblin.cpp
+CMakeFiles/myRPG.dir/Goblin.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/myRPG.dir/Goblin.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/Goblin.cpp.obj -MF CMakeFiles\myRPG.dir\Goblin.cpp.obj.d -o CMakeFiles\myRPG.dir\Goblin.cpp.obj -c C:\Users\User\Coding\myNewRPG\Goblin.cpp
+
+CMakeFiles/myRPG.dir/Goblin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myRPG.dir/Goblin.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Coding\myNewRPG\Goblin.cpp > CMakeFiles\myRPG.dir\Goblin.cpp.i
+
+CMakeFiles/myRPG.dir/Goblin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/Goblin.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\Goblin.cpp -o CMakeFiles\myRPG.dir\Goblin.cpp.s
+
 CMakeFiles/myRPG.dir/Item.cpp.obj: CMakeFiles/myRPG.dir/flags.make
 CMakeFiles/myRPG.dir/Item.cpp.obj: C:/Users/User/Coding/myNewRPG/Item.cpp
 CMakeFiles/myRPG.dir/Item.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/myRPG.dir/Item.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/myRPG.dir/Item.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/Item.cpp.obj -MF CMakeFiles\myRPG.dir\Item.cpp.obj.d -o CMakeFiles\myRPG.dir\Item.cpp.obj -c C:\Users\User\Coding\myNewRPG\Item.cpp
 
 CMakeFiles/myRPG.dir/Item.cpp.i: cmake_force
@@ -228,7 +242,7 @@ CMakeFiles/myRPG.dir/Item.cpp.s: cmake_force
 CMakeFiles/myRPG.dir/Potion.cpp.obj: CMakeFiles/myRPG.dir/flags.make
 CMakeFiles/myRPG.dir/Potion.cpp.obj: C:/Users/User/Coding/myNewRPG/Potion.cpp
 CMakeFiles/myRPG.dir/Potion.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/myRPG.dir/Potion.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/myRPG.dir/Potion.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/Potion.cpp.obj -MF CMakeFiles\myRPG.dir\Potion.cpp.obj.d -o CMakeFiles\myRPG.dir\Potion.cpp.obj -c C:\Users\User\Coding\myNewRPG\Potion.cpp
 
 CMakeFiles/myRPG.dir/Potion.cpp.i: cmake_force
@@ -239,10 +253,38 @@ CMakeFiles/myRPG.dir/Potion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/Potion.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\Potion.cpp -o CMakeFiles\myRPG.dir\Potion.cpp.s
 
+CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj: CMakeFiles/myRPG.dir/flags.make
+CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj: C:/Users/User/Coding/myNewRPG/SlimeBubble.cpp
+CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj -MF CMakeFiles\myRPG.dir\SlimeBubble.cpp.obj.d -o CMakeFiles\myRPG.dir\SlimeBubble.cpp.obj -c C:\Users\User\Coding\myNewRPG\SlimeBubble.cpp
+
+CMakeFiles/myRPG.dir/SlimeBubble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myRPG.dir/SlimeBubble.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Coding\myNewRPG\SlimeBubble.cpp > CMakeFiles\myRPG.dir\SlimeBubble.cpp.i
+
+CMakeFiles/myRPG.dir/SlimeBubble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/SlimeBubble.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\SlimeBubble.cpp -o CMakeFiles\myRPG.dir\SlimeBubble.cpp.s
+
+CMakeFiles/myRPG.dir/IronHammer.cpp.obj: CMakeFiles/myRPG.dir/flags.make
+CMakeFiles/myRPG.dir/IronHammer.cpp.obj: C:/Users/User/Coding/myNewRPG/IronHammer.cpp
+CMakeFiles/myRPG.dir/IronHammer.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/myRPG.dir/IronHammer.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/IronHammer.cpp.obj -MF CMakeFiles\myRPG.dir\IronHammer.cpp.obj.d -o CMakeFiles\myRPG.dir\IronHammer.cpp.obj -c C:\Users\User\Coding\myNewRPG\IronHammer.cpp
+
+CMakeFiles/myRPG.dir/IronHammer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myRPG.dir/IronHammer.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Coding\myNewRPG\IronHammer.cpp > CMakeFiles\myRPG.dir\IronHammer.cpp.i
+
+CMakeFiles/myRPG.dir/IronHammer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/IronHammer.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\IronHammer.cpp -o CMakeFiles\myRPG.dir\IronHammer.cpp.s
+
 CMakeFiles/myRPG.dir/ItemFactory.cpp.obj: CMakeFiles/myRPG.dir/flags.make
 CMakeFiles/myRPG.dir/ItemFactory.cpp.obj: C:/Users/User/Coding/myNewRPG/ItemFactory.cpp
 CMakeFiles/myRPG.dir/ItemFactory.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/myRPG.dir/ItemFactory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/myRPG.dir/ItemFactory.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/ItemFactory.cpp.obj -MF CMakeFiles\myRPG.dir\ItemFactory.cpp.obj.d -o CMakeFiles\myRPG.dir\ItemFactory.cpp.obj -c C:\Users\User\Coding\myNewRPG\ItemFactory.cpp
 
 CMakeFiles/myRPG.dir/ItemFactory.cpp.i: cmake_force
@@ -256,7 +298,7 @@ CMakeFiles/myRPG.dir/ItemFactory.cpp.s: cmake_force
 CMakeFiles/myRPG.dir/Merchant.cpp.obj: CMakeFiles/myRPG.dir/flags.make
 CMakeFiles/myRPG.dir/Merchant.cpp.obj: C:/Users/User/Coding/myNewRPG/Merchant.cpp
 CMakeFiles/myRPG.dir/Merchant.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/myRPG.dir/Merchant.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/myRPG.dir/Merchant.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/Merchant.cpp.obj -MF CMakeFiles\myRPG.dir\Merchant.cpp.obj.d -o CMakeFiles\myRPG.dir\Merchant.cpp.obj -c C:\Users\User\Coding\myNewRPG\Merchant.cpp
 
 CMakeFiles/myRPG.dir/Merchant.cpp.i: cmake_force
@@ -270,7 +312,7 @@ CMakeFiles/myRPG.dir/Merchant.cpp.s: cmake_force
 CMakeFiles/myRPG.dir/CombatEngine.cpp.obj: CMakeFiles/myRPG.dir/flags.make
 CMakeFiles/myRPG.dir/CombatEngine.cpp.obj: C:/Users/User/Coding/myNewRPG/CombatEngine.cpp
 CMakeFiles/myRPG.dir/CombatEngine.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/myRPG.dir/CombatEngine.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/myRPG.dir/CombatEngine.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/CombatEngine.cpp.obj -MF CMakeFiles\myRPG.dir\CombatEngine.cpp.obj.d -o CMakeFiles\myRPG.dir\CombatEngine.cpp.obj -c C:\Users\User\Coding\myNewRPG\CombatEngine.cpp
 
 CMakeFiles/myRPG.dir/CombatEngine.cpp.i: cmake_force
@@ -280,6 +322,20 @@ CMakeFiles/myRPG.dir/CombatEngine.cpp.i: cmake_force
 CMakeFiles/myRPG.dir/CombatEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/CombatEngine.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\CombatEngine.cpp -o CMakeFiles\myRPG.dir\CombatEngine.cpp.s
+
+CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj: CMakeFiles/myRPG.dir/flags.make
+CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj: C:/Users/User/Coding/myNewRPG/MonsterFactory.cpp
+CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj: CMakeFiles/myRPG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj -MF CMakeFiles\myRPG.dir\MonsterFactory.cpp.obj.d -o CMakeFiles\myRPG.dir\MonsterFactory.cpp.obj -c C:\Users\User\Coding\myNewRPG\MonsterFactory.cpp
+
+CMakeFiles/myRPG.dir/MonsterFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myRPG.dir/MonsterFactory.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Coding\myNewRPG\MonsterFactory.cpp > CMakeFiles\myRPG.dir\MonsterFactory.cpp.i
+
+CMakeFiles/myRPG.dir/MonsterFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myRPG.dir/MonsterFactory.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Coding\myNewRPG\MonsterFactory.cpp -o CMakeFiles\myRPG.dir\MonsterFactory.cpp.s
 
 # Object files for target myRPG
 myRPG_OBJECTS = \
@@ -293,11 +349,15 @@ myRPG_OBJECTS = \
 "CMakeFiles/myRPG.dir/Monster.cpp.obj" \
 "CMakeFiles/myRPG.dir/Orc.cpp.obj" \
 "CMakeFiles/myRPG.dir/Slime.cpp.obj" \
+"CMakeFiles/myRPG.dir/Goblin.cpp.obj" \
 "CMakeFiles/myRPG.dir/Item.cpp.obj" \
 "CMakeFiles/myRPG.dir/Potion.cpp.obj" \
+"CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj" \
+"CMakeFiles/myRPG.dir/IronHammer.cpp.obj" \
 "CMakeFiles/myRPG.dir/ItemFactory.cpp.obj" \
 "CMakeFiles/myRPG.dir/Merchant.cpp.obj" \
-"CMakeFiles/myRPG.dir/CombatEngine.cpp.obj"
+"CMakeFiles/myRPG.dir/CombatEngine.cpp.obj" \
+"CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj"
 
 # External object files for target myRPG
 myRPG_EXTERNAL_OBJECTS =
@@ -312,16 +372,20 @@ myRPG.exe: CMakeFiles/myRPG.dir/Rogue.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Monster.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Orc.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Slime.cpp.obj
+myRPG.exe: CMakeFiles/myRPG.dir/Goblin.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Item.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Potion.cpp.obj
+myRPG.exe: CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj
+myRPG.exe: CMakeFiles/myRPG.dir/IronHammer.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/ItemFactory.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/Merchant.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/CombatEngine.cpp.obj
+myRPG.exe: CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj
 myRPG.exe: CMakeFiles/myRPG.dir/build.make
 myRPG.exe: CMakeFiles/myRPG.dir/linkLibs.rsp
 myRPG.exe: CMakeFiles/myRPG.dir/objects1.rsp
 myRPG.exe: CMakeFiles/myRPG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable myRPG.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\User\Coding\myNewRPG\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable myRPG.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\myRPG.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

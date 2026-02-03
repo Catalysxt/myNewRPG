@@ -21,9 +21,13 @@ add_executable(myRPG
     Monster.cpp
     Orc.cpp
     Slime.cpp
+    Goblin.cpp
     Item.cpp
     Potion.cpp
+    SlimeBubble.cpp
+    IronHammer.cpp
     ItemFactory.cpp
     Merchant.cpp
     CombatEngine.cpp
+    MonsterFactory.cpp
 )

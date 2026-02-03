@@ -27,6 +27,7 @@ public:
     // Getters 
     int GetCurrentHP() const;
     int GetMaxHP() const;
+    void SetMaxHP(int hp);  // For HP variance in MonsterFactory
     int GetLevel() const;
     StatBlock GetStats() const;
     

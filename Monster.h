@@ -1,13 +1,39 @@
 #pragma once
+#include <memory>
 #include "Character.h"
 
-// Monster inherits from Character.
-// We can add monster-specific logic here later (like GoldDrop or Aggro).
+class Item;
+class CombatEngine;
+
+// ============================================================================
+// MONSTER
+// ============================================================================
+// Base class for all enemy types.
+// Includes loot drop system - override in subclasses for specific drops.
+// ============================================================================
+
 class Monster : public Character {
 public:
     Monster(std::string name, int hp, StatBlock stats);
 
-    // We implement LevelUp here so we don't HAVE to do it for every single monster type,
-    // unless a specific monster has unique growth.
     void LevelUp() override;
+    
+    // ========================================================================
+    // LOOT SYSTEM
+    // ========================================================================
+    // Override these in subclasses for monster-specific drops
+    
+    // How much gold does this monster drop? (base + variance)
+    virtual int GetGoldDrop(CombatEngine& engine) const;
+    
+    // What item does this monster drop? May return nullptr (no drop)
+    virtual std::unique_ptr<Item> GetLootDrop(CombatEngine& engine) const;
+    
+protected:
+    // Base gold range for this monster type
+    int m_MinGold = 5;
+    int m_MaxGold = 15;
+    
+    // Chance to drop loot (1-100)
+    int m_LootDropChance = 20;  // 20% by default
 };

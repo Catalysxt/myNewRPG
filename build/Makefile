@@ -200,6 +200,54 @@ CombatEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.s
 .PHONY : CombatEngine.cpp.s
 
+Goblin.obj: Goblin.cpp.obj
+.PHONY : Goblin.obj
+
+# target to build an object file
+Goblin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Goblin.cpp.obj
+.PHONY : Goblin.cpp.obj
+
+Goblin.i: Goblin.cpp.i
+.PHONY : Goblin.i
+
+# target to preprocess a source file
+Goblin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Goblin.cpp.i
+.PHONY : Goblin.cpp.i
+
+Goblin.s: Goblin.cpp.s
+.PHONY : Goblin.s
+
+# target to generate assembly for a file
+Goblin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Goblin.cpp.s
+.PHONY : Goblin.cpp.s
+
+IronHammer.obj: IronHammer.cpp.obj
+.PHONY : IronHammer.obj
+
+# target to build an object file
+IronHammer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/IronHammer.cpp.obj
+.PHONY : IronHammer.cpp.obj
+
+IronHammer.i: IronHammer.cpp.i
+.PHONY : IronHammer.i
+
+# target to preprocess a source file
+IronHammer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/IronHammer.cpp.i
+.PHONY : IronHammer.cpp.i
+
+IronHammer.s: IronHammer.cpp.s
+.PHONY : IronHammer.s
+
+# target to generate assembly for a file
+IronHammer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/IronHammer.cpp.s
+.PHONY : IronHammer.cpp.s
+
 Item.obj: Item.cpp.obj
 .PHONY : Item.obj
 
@@ -296,6 +344,30 @@ Monster.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Monster.cpp.s
 .PHONY : Monster.cpp.s
 
+MonsterFactory.obj: MonsterFactory.cpp.obj
+.PHONY : MonsterFactory.obj
+
+# target to build an object file
+MonsterFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MonsterFactory.cpp.obj
+.PHONY : MonsterFactory.cpp.obj
+
+MonsterFactory.i: MonsterFactory.cpp.i
+.PHONY : MonsterFactory.i
+
+# target to preprocess a source file
+MonsterFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MonsterFactory.cpp.i
+.PHONY : MonsterFactory.cpp.i
+
+MonsterFactory.s: MonsterFactory.cpp.s
+.PHONY : MonsterFactory.s
+
+# target to generate assembly for a file
+MonsterFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MonsterFactory.cpp.s
+.PHONY : MonsterFactory.cpp.s
+
 Orc.obj: Orc.cpp.obj
 .PHONY : Orc.obj
 
@@ -391,6 +463,30 @@ Slime.s: Slime.cpp.s
 Slime.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Slime.cpp.s
 .PHONY : Slime.cpp.s
+
+SlimeBubble.obj: SlimeBubble.cpp.obj
+.PHONY : SlimeBubble.obj
+
+# target to build an object file
+SlimeBubble.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/SlimeBubble.cpp.obj
+.PHONY : SlimeBubble.cpp.obj
+
+SlimeBubble.i: SlimeBubble.cpp.i
+.PHONY : SlimeBubble.i
+
+# target to preprocess a source file
+SlimeBubble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/SlimeBubble.cpp.i
+.PHONY : SlimeBubble.cpp.i
+
+SlimeBubble.s: SlimeBubble.cpp.s
+.PHONY : SlimeBubble.s
+
+# target to generate assembly for a file
+SlimeBubble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/SlimeBubble.cpp.s
+.PHONY : SlimeBubble.cpp.s
 
 StatBlock.obj: StatBlock.cpp.obj
 .PHONY : StatBlock.obj
@@ -506,6 +602,12 @@ help:
 	@echo ... CombatEngine.obj
 	@echo ... CombatEngine.i
 	@echo ... CombatEngine.s
+	@echo ... Goblin.obj
+	@echo ... Goblin.i
+	@echo ... Goblin.s
+	@echo ... IronHammer.obj
+	@echo ... IronHammer.i
+	@echo ... IronHammer.s
 	@echo ... Item.obj
 	@echo ... Item.i
 	@echo ... Item.s
@@ -518,6 +620,9 @@ help:
 	@echo ... Monster.obj
 	@echo ... Monster.i
 	@echo ... Monster.s
+	@echo ... MonsterFactory.obj
+	@echo ... MonsterFactory.i
+	@echo ... MonsterFactory.s
 	@echo ... Orc.obj
 	@echo ... Orc.i
 	@echo ... Orc.s
@@ -530,6 +635,9 @@ help:
 	@echo ... Slime.obj
 	@echo ... Slime.i
 	@echo ... Slime.s
+	@echo ... SlimeBubble.obj
+	@echo ... SlimeBubble.i
+	@echo ... SlimeBubble.s
 	@echo ... StatBlock.obj
 	@echo ... StatBlock.i
 	@echo ... StatBlock.s
