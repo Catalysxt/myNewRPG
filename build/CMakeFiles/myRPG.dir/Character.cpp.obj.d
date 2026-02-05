@@ -196,4 +196,17 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/random.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
- C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h
+ C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
+ C:\Users\User\Coding\myNewRPG\EventBus.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/functional \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/array \
+ C:/msys64/ucrt64/include/c++/15.2.0/compare \
+ C:\Users\User\Coding\myNewRPG\GameEvent.h

@@ -30,4 +30,5 @@ add_executable(myRPG
     Merchant.cpp
     CombatEngine.cpp
     MonsterFactory.cpp
+    EventBus.cpp
 )

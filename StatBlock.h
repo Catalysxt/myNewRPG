@@ -17,6 +17,13 @@ public:
     // Methods to increase stats (needed for Leveling)
     void IncreaseStats(int s, int i, int a, int arm, int res);
 
+    // Methods to increase individual stats
+    int IncreaseStr(int amount) { return m_Strength += amount; }
+    int IncreaseInt(int amount) { return m_Intellect += amount; }
+    int IncreaseAgi(int amount) { return m_Agility += amount; }
+    int IncreaseArm(int amount) { return m_Armor += amount; }
+    int IncreaseRes(int amount) { return m_ElementRes += amount; }
+
     // Operator overloading to easily manipulate stats
     StatBlock operator+(const StatBlock& other) const;
     StatBlock operator-(const StatBlock& other) const;

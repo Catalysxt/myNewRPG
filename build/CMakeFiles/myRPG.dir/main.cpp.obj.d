@@ -223,4 +223,6 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/15.2.0/array \
- C:/msys64/ucrt64/include/c++/15.2.0/compare
+ C:/msys64/ucrt64/include/c++/15.2.0/compare \
+ C:\Users\User\Coding\myNewRPG\EventBus.h \
+ C:\Users\User\Coding\myNewRPG\GameEvent.h

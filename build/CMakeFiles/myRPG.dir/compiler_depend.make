@@ -8,6 +8,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/_mingw_secapi.h \
   C:/msys64/ucrt64/include/_mingw_stat64.h \
   C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/array \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bit \
@@ -27,12 +28,16 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
@@ -46,6 +51,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
@@ -62,6 +68,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
@@ -81,6 +88,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
@@ -90,6 +98,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
   C:/msys64/ucrt64/include/c++/15.2.0/clocale \
   C:/msys64/ucrt64/include/c++/15.2.0/cmath \
+  C:/msys64/ucrt64/include/c++/15.2.0/compare \
   C:/msys64/ucrt64/include/c++/15.2.0/concepts \
   C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
   C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
@@ -107,6 +116,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/functional \
   C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
   C:/msys64/ucrt64/include/c++/15.2.0/ios \
   C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
@@ -143,6 +153,7 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
+  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
   C:/msys64/ucrt64/include/c++/15.2.0/vector \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -205,6 +216,8 @@ CMakeFiles/myRPG.dir/Character.cpp.obj: C:/Users/User/Coding/myNewRPG/Character.
   C:/Users/User/Coding/myNewRPG/Character.h \
   C:/Users/User/Coding/myNewRPG/CombatEngine.h \
   C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
+  C:/Users/User/Coding/myNewRPG/EventBus.h \
+  C:/Users/User/Coding/myNewRPG/GameEvent.h \
   C:/Users/User/Coding/myNewRPG/Item.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h \
   C:/Users/User/Coding/myNewRPG/StatusEffect.h
@@ -626,6 +639,128 @@ CMakeFiles/myRPG.dir/CombatEngine.cpp.obj: C:/Users/User/Coding/myNewRPG/CombatE
   C:/Users/User/Coding/myNewRPG/CombatEngine.h \
   C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
   C:/Users/User/Coding/myNewRPG/StatBlock.h
+
+CMakeFiles/myRPG.dir/EventBus.cpp.obj: C:/Users/User/Coding/myNewRPG/EventBus.cpp \
+  C:/msys64/ucrt64/include/_mingw.h \
+  C:/msys64/ucrt64/include/_mingw_mac.h \
+  C:/msys64/ucrt64/include/_mingw_off_t.h \
+  C:/msys64/ucrt64/include/_mingw_secapi.h \
+  C:/msys64/ucrt64/include/_mingw_stat64.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/array \
+  C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bit \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/memoryfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream_insert.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/cctype \
+  C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
+  C:/msys64/ucrt64/include/c++/15.2.0/clocale \
+  C:/msys64/ucrt64/include/c++/15.2.0/compare \
+  C:/msys64/ucrt64/include/c++/15.2.0/concepts \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdio \
+  C:/msys64/ucrt64/include/c++/15.2.0/cstdlib \
+  C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
+  C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/aligned_buffer.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/functional \
+  C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
+  C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
+  C:/msys64/ucrt64/include/c++/15.2.0/new \
+  C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/string \
+  C:/msys64/ucrt64/include/c++/15.2.0/string_view \
+  C:/msys64/ucrt64/include/c++/15.2.0/tuple \
+  C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
+  C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
+  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
+  C:/msys64/ucrt64/include/c++/15.2.0/vector \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/msys64/ucrt64/include/corecrt.h \
+  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+  C:/msys64/ucrt64/include/corecrt_wctype.h \
+  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+  C:/msys64/ucrt64/include/crtdefs.h \
+  C:/msys64/ucrt64/include/ctype.h \
+  C:/msys64/ucrt64/include/errno.h \
+  C:/msys64/ucrt64/include/limits.h \
+  C:/msys64/ucrt64/include/locale.h \
+  C:/msys64/ucrt64/include/malloc.h \
+  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
+  C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+  C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
+  C:/msys64/ucrt64/include/stddef.h \
+  C:/msys64/ucrt64/include/stdio.h \
+  C:/msys64/ucrt64/include/stdlib.h \
+  C:/msys64/ucrt64/include/swprintf.inl \
+  C:/msys64/ucrt64/include/vadefs.h \
+  C:/msys64/ucrt64/include/wchar.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  C:/Users/User/Coding/myNewRPG/EventBus.h \
+  C:/Users/User/Coding/myNewRPG/GameEvent.h
 
 CMakeFiles/myRPG.dir/Goblin.cpp.obj: C:/Users/User/Coding/myNewRPG/Goblin.cpp \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -3523,6 +3658,8 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:/Users/User/Coding/myNewRPG/main.cpp \
   C:/Users/User/Coding/myNewRPG/Cleric.h \
   C:/Users/User/Coding/myNewRPG/CombatEngine.h \
   C:/Users/User/Coding/myNewRPG/DamageStrategy.h \
+  C:/Users/User/Coding/myNewRPG/EventBus.h \
+  C:/Users/User/Coding/myNewRPG/GameEvent.h \
   C:/Users/User/Coding/myNewRPG/Goblin.h \
   C:/Users/User/Coding/myNewRPG/IronHammer.h \
   C:/Users/User/Coding/myNewRPG/Item.h \
@@ -3559,17 +3696,15 @@ C:/Users/User/Coding/myNewRPG/Rogue.h:
 
 C:/Users/User/Coding/myNewRPG/Character.cpp:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
+C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h:
 
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/_mingw.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/tr1/beta_function.tcc:
 
@@ -3587,7 +3722,13 @@ C:/Users/User/Coding/myNewRPG/Item.cpp:
 
 C:/msys64/ucrt64/include/_timeval.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/array:
+
 C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h:
 
 C:/Users/User/Coding/myNewRPG/Item.h:
 
@@ -3669,6 +3810,10 @@ C:/Users/User/Coding/myNewRPG/Cleric.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h:
@@ -3679,8 +3824,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h:
@@ -3689,9 +3832,11 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/string:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h:
+C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_atomic.h:
 
@@ -3725,7 +3870,17 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/debug/assertions.h:
 
@@ -3757,9 +3912,7 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/stringfwd.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/array:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h:
+C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h:
 
@@ -3773,6 +3926,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h:
 
+C:/Users/User/Coding/myNewRPG/GameEvent.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/cctype:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cerrno:
@@ -3780,6 +3935,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/cerrno:
 C:/msys64/ucrt64/include/wctype.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/cmath:
+
+C:/msys64/ucrt64/include/c++/15.2.0/compare:
 
 C:/msys64/ucrt64/include/c++/15.2.0/concepts:
 
@@ -3821,6 +3978,10 @@ C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/functional:
+
 C:/msys64/ucrt64/include/c++/15.2.0/initializer_list:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ios:
@@ -3851,10 +4012,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/random:
 
 C:/msys64/ucrt64/include/c++/15.2.0/stdexcept:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable_policy.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h:
-
 C:/Users/User/Coding/myNewRPG/MonsterFactory.cpp:
 
 C:/msys64/ucrt64/include/c++/15.2.0/streambuf:
@@ -3882,6 +4039,12 @@ C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h:
 C:/msys64/ucrt64/include/c++/15.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/15.2.0/type_traits:
+
+C:/Users/User/Coding/myNewRPG/Monster.cpp:
+
+C:/Users/User/Coding/myNewRPG/IronHammer.cpp:
+
+C:/msys64/ucrt64/include/c++/15.2.0/unordered_map:
 
 C:/msys64/ucrt64/include/c++/15.2.0/vector:
 
@@ -3987,6 +4150,8 @@ C:/Users/User/Coding/myNewRPG/Character.h:
 
 C:/Users/User/Coding/myNewRPG/DamageStrategy.h:
 
+C:/Users/User/Coding/myNewRPG/EventBus.h:
+
 C:/Users/User/Coding/myNewRPG/StatusEffect.h:
 
 C:/Users/User/Coding/myNewRPG/Cleric.cpp:
@@ -3999,21 +4164,13 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/functional:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_heap.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
+
+C:/Users/User/Coding/myNewRPG/EventBus.cpp:
 
 C:/Users/User/Coding/myNewRPG/Goblin.cpp:
 
 C:/Users/User/Coding/myNewRPG/Goblin.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/unordered_map:
-
-C:/Users/User/Coding/myNewRPG/Monster.cpp:
-
-C:/Users/User/Coding/myNewRPG/IronHammer.cpp:
 
 C:/Users/User/Coding/myNewRPG/Potion.h:
 
@@ -4024,20 +4181,6 @@ C:/Users/User/Coding/myNewRPG/Merchant.h:
 C:/Users/User/Coding/myNewRPG/PricingStrategy.h:
 
 C:/Users/User/Coding/myNewRPG/TradeResult.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/node_handle.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/enable_special_members.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/compare:
 
 C:/Users/User/Coding/myNewRPG/MonsterFactory.h:
 

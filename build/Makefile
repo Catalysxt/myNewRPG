@@ -200,6 +200,30 @@ CombatEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.s
 .PHONY : CombatEngine.cpp.s
 
+EventBus.obj: EventBus.cpp.obj
+.PHONY : EventBus.obj
+
+# target to build an object file
+EventBus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/EventBus.cpp.obj
+.PHONY : EventBus.cpp.obj
+
+EventBus.i: EventBus.cpp.i
+.PHONY : EventBus.i
+
+# target to preprocess a source file
+EventBus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/EventBus.cpp.i
+.PHONY : EventBus.cpp.i
+
+EventBus.s: EventBus.cpp.s
+.PHONY : EventBus.s
+
+# target to generate assembly for a file
+EventBus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/EventBus.cpp.s
+.PHONY : EventBus.cpp.s
+
 Goblin.obj: Goblin.cpp.obj
 .PHONY : Goblin.obj
 
@@ -602,6 +626,9 @@ help:
 	@echo ... CombatEngine.obj
 	@echo ... CombatEngine.i
 	@echo ... CombatEngine.s
+	@echo ... EventBus.obj
+	@echo ... EventBus.i
+	@echo ... EventBus.s
 	@echo ... Goblin.obj
 	@echo ... Goblin.i
 	@echo ... Goblin.s

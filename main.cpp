@@ -16,6 +16,7 @@
 #include "Merchant.h"
 #include "CombatEngine.h"
 #include "MonsterFactory.h"
+#include "EventBus.h"
 
 enum class CharacterType {
     Warrior = 1, // Start at 1 to match user input convenience
@@ -250,6 +251,28 @@ int main() {
     std::cout << "       WELCOME TO THE CPP RPG           " << std::endl;
     std::cout << "========================================" << std::endl;
 
+    // =========================================================================
+    // COMBAT LOGGER - Subscribe to game events
+    // =========================================================================
+    // These lambdas will be called whenever their event type is published.
+    // This decouples logging from the game logic (Observer Pattern).
+    
+    EventBus::Instance().Subscribe(EventType::CharacterDamaged, [](const GameEvent& e) {
+        std::cout << "[LOG] " << e.target->GetName() << " took " << e.value << " damage" << std::endl;
+    });
+    
+    EventBus::Instance().Subscribe(EventType::CharacterDied, [](const GameEvent& e) {
+        std::cout << "[LOG] " << e.target->GetName() << " has fallen!" << std::endl;
+    });
+    
+    EventBus::Instance().Subscribe(EventType::CharacterHealed, [](const GameEvent& e) {
+        std::cout << "[LOG] " << e.target->GetName() << " healed for " << e.value << " HP" << std::endl;
+    });
+    
+    EventBus::Instance().Subscribe(EventType::CharacterLeveledUp, [](const GameEvent& e) {
+        std::cout << "[LOG] " << e.target->GetName() << " reached level " << e.value << "!" << std::endl;
+    });
+
     // 1. Character Selection
     std::cout << "Choose your class:" << std::endl;
     std::cout << "1. Warrior (High HP, Strong Physical)" << std::endl;
@@ -312,6 +335,7 @@ int main() {
         
         // Create MonsterFactory and register monster types 
         MonsterFactory factory(combatEngine);
+        // 2nd parameter is the spawn chance
         factory.Register("Slime", 60, 0.15f, []() { return std::make_unique<Slime>(); });
         factory.Register("Orc", 30, 0.15f, []() { return std::make_unique<Orc>(); });
         factory.Register("Goblin", 10, 0.15f, []() { return std::make_unique<Goblin>(); });

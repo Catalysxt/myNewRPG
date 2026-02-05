@@ -3,6 +3,7 @@
 #include "Character.h"
 #include "Item.h"
 #include "CombatEngine.h"
+#include "EventBus.h"
 
 Character::Character(std::string name, int hp, StatBlock stats)
     : m_Name(name), m_MaxHP(hp), m_CurrentHP(hp), m_Stats(stats), 
@@ -19,7 +20,14 @@ void Character::TakeDamage(int damage) {
     if (m_CurrentHP < 0) {
         m_CurrentHP = 0;
     }
-    std::cout << m_Name << " takes " << damage << " damage." << std::endl;
+    
+    // Publish damage event
+    EventBus::Instance().Publish({EventType::CharacterDamaged, nullptr, this, damage});
+    
+    // Check for death
+    if (m_CurrentHP == 0) {
+        EventBus::Instance().Publish({EventType::CharacterDied, nullptr, this, 0});
+    }
 }
 
 void Character::Heal(int amount) {
@@ -27,7 +35,9 @@ void Character::Heal(int amount) {
     if (m_CurrentHP > m_MaxHP) {
         m_CurrentHP = m_MaxHP; // Prevent healing past MaxHP
     }
-    std::cout << m_Name << " heals for " << amount << " HP!" << std::endl;
+    
+    // Publish heal event
+    EventBus::Instance().Publish({EventType::CharacterHealed, nullptr, this, amount});
 }
 
 // Getters
@@ -168,8 +178,10 @@ void Character::LevelUp() {
     // 2. Default Stats Increase (Can be overridden by subclasses for specific growth)
     m_Stats.IncreaseStats(1, 1, 1, 0, 0); 
 
-    std::cout << "LEVEL UP! " << m_Name << " is now Level " << m_Level << "!" << std::endl;
     std::cout << "HP Increased to " << m_MaxHP << ". Stats increased!" << std::endl;
+    
+    // Publish level-up event
+    EventBus::Instance().Publish({EventType::CharacterLeveledUp, nullptr, this, m_Level});
 }
 
 // --- Inventory System Implementation ---

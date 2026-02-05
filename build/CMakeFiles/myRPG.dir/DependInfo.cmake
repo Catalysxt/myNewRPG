@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/User/Coding/myNewRPG/Character.cpp" "CMakeFiles/myRPG.dir/Character.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Character.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Cleric.cpp" "CMakeFiles/myRPG.dir/Cleric.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Cleric.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/CombatEngine.cpp" "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/CombatEngine.cpp.obj.d"
+  "C:/Users/User/Coding/myNewRPG/EventBus.cpp" "CMakeFiles/myRPG.dir/EventBus.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/EventBus.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Goblin.cpp" "CMakeFiles/myRPG.dir/Goblin.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Goblin.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/IronHammer.cpp" "CMakeFiles/myRPG.dir/IronHammer.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/IronHammer.cpp.obj.d"
   "C:/Users/User/Coding/myNewRPG/Item.cpp" "CMakeFiles/myRPG.dir/Item.cpp.obj" "gcc" "CMakeFiles/myRPG.dir/Item.cpp.obj.d"

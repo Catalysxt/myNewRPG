@@ -37,6 +37,13 @@ public:
     // Damage strategy (Physical, Magical, etc.)
     const DamageStrategy& GetDamageStrategy() const;
     
+    // Stat modification (delegates to StatBlock)
+    int IncreaseStr(int amount) { return m_Stats.IncreaseStr(amount); }
+    int IncreaseInt(int amount) { return m_Stats.IncreaseInt(amount); }
+    int IncreaseAgi(int amount) { return m_Stats.IncreaseAgi(amount); }
+    int IncreaseArm(int amount) { return m_Stats.IncreaseArm(amount); }
+    int IncreaseRes(int amount) { return m_Stats.IncreaseRes(amount); }
+    
     // =========================================================================
     // RESOURCE POINT SYSTEM
     // =========================================================================
