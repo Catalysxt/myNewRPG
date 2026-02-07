@@ -32,10 +32,10 @@ void EventBus::Subscribe(EventType type, EventHandler handler) {
 // ============================================================================
 
 void EventBus::Publish(const GameEvent& event) {
-    auto it = m_Subscribers.find(event.type);
+    auto it = m_Subscribers.find(event.type); // Find the value associated with this key
     if (it != m_Subscribers.end()) {
-        for (const auto& handler : it->second) {
-            handler(event);
+        for (const auto& handler : it->second) { // Iterate through all handlers
+            handler(event); // Pass in Gameevent. This includes the EventType e.g CharacterLevelUp
         }
     }
 }
