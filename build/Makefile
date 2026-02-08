@@ -200,6 +200,30 @@ CombatEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatEngine.cpp.s
 .PHONY : CombatEngine.cpp.s
 
+CombatState.obj: CombatState.cpp.obj
+.PHONY : CombatState.obj
+
+# target to build an object file
+CombatState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatState.cpp.obj
+.PHONY : CombatState.cpp.obj
+
+CombatState.i: CombatState.cpp.i
+.PHONY : CombatState.i
+
+# target to preprocess a source file
+CombatState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatState.cpp.i
+.PHONY : CombatState.cpp.i
+
+CombatState.s: CombatState.cpp.s
+.PHONY : CombatState.s
+
+# target to generate assembly for a file
+CombatState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/CombatState.cpp.s
+.PHONY : CombatState.cpp.s
+
 EventBus.obj: EventBus.cpp.obj
 .PHONY : EventBus.obj
 
@@ -223,6 +247,54 @@ EventBus.s: EventBus.cpp.s
 EventBus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/EventBus.cpp.s
 .PHONY : EventBus.cpp.s
+
+GameOverState.obj: GameOverState.cpp.obj
+.PHONY : GameOverState.obj
+
+# target to build an object file
+GameOverState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameOverState.cpp.obj
+.PHONY : GameOverState.cpp.obj
+
+GameOverState.i: GameOverState.cpp.i
+.PHONY : GameOverState.i
+
+# target to preprocess a source file
+GameOverState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameOverState.cpp.i
+.PHONY : GameOverState.cpp.i
+
+GameOverState.s: GameOverState.cpp.s
+.PHONY : GameOverState.s
+
+# target to generate assembly for a file
+GameOverState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameOverState.cpp.s
+.PHONY : GameOverState.cpp.s
+
+GameStateManager.obj: GameStateManager.cpp.obj
+.PHONY : GameStateManager.obj
+
+# target to build an object file
+GameStateManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameStateManager.cpp.obj
+.PHONY : GameStateManager.cpp.obj
+
+GameStateManager.i: GameStateManager.cpp.i
+.PHONY : GameStateManager.i
+
+# target to preprocess a source file
+GameStateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameStateManager.cpp.i
+.PHONY : GameStateManager.cpp.i
+
+GameStateManager.s: GameStateManager.cpp.s
+.PHONY : GameStateManager.s
+
+# target to generate assembly for a file
+GameStateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/GameStateManager.cpp.s
+.PHONY : GameStateManager.cpp.s
 
 Goblin.obj: Goblin.cpp.obj
 .PHONY : Goblin.obj
@@ -319,6 +391,30 @@ ItemFactory.s: ItemFactory.cpp.s
 ItemFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/ItemFactory.cpp.s
 .PHONY : ItemFactory.cpp.s
+
+MainMenuState.obj: MainMenuState.cpp.obj
+.PHONY : MainMenuState.obj
+
+# target to build an object file
+MainMenuState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MainMenuState.cpp.obj
+.PHONY : MainMenuState.cpp.obj
+
+MainMenuState.i: MainMenuState.cpp.i
+.PHONY : MainMenuState.i
+
+# target to preprocess a source file
+MainMenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MainMenuState.cpp.i
+.PHONY : MainMenuState.cpp.i
+
+MainMenuState.s: MainMenuState.cpp.s
+.PHONY : MainMenuState.s
+
+# target to generate assembly for a file
+MainMenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/MainMenuState.cpp.s
+.PHONY : MainMenuState.cpp.s
 
 Merchant.obj: Merchant.cpp.obj
 .PHONY : Merchant.obj
@@ -464,6 +560,30 @@ Rogue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/Rogue.cpp.s
 .PHONY : Rogue.cpp.s
 
+ShopState.obj: ShopState.cpp.obj
+.PHONY : ShopState.obj
+
+# target to build an object file
+ShopState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/ShopState.cpp.obj
+.PHONY : ShopState.cpp.obj
+
+ShopState.i: ShopState.cpp.i
+.PHONY : ShopState.i
+
+# target to preprocess a source file
+ShopState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/ShopState.cpp.i
+.PHONY : ShopState.cpp.i
+
+ShopState.s: ShopState.cpp.s
+.PHONY : ShopState.s
+
+# target to generate assembly for a file
+ShopState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/ShopState.cpp.s
+.PHONY : ShopState.cpp.s
+
 Slime.obj: Slime.cpp.obj
 .PHONY : Slime.obj
 
@@ -535,6 +655,30 @@ StatBlock.s: StatBlock.cpp.s
 StatBlock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/StatBlock.cpp.s
 .PHONY : StatBlock.cpp.s
+
+TrainingAreaState.obj: TrainingAreaState.cpp.obj
+.PHONY : TrainingAreaState.obj
+
+# target to build an object file
+TrainingAreaState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/TrainingAreaState.cpp.obj
+.PHONY : TrainingAreaState.cpp.obj
+
+TrainingAreaState.i: TrainingAreaState.cpp.i
+.PHONY : TrainingAreaState.i
+
+# target to preprocess a source file
+TrainingAreaState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/TrainingAreaState.cpp.i
+.PHONY : TrainingAreaState.cpp.i
+
+TrainingAreaState.s: TrainingAreaState.cpp.s
+.PHONY : TrainingAreaState.s
+
+# target to generate assembly for a file
+TrainingAreaState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/TrainingAreaState.cpp.s
+.PHONY : TrainingAreaState.cpp.s
 
 Warrior.obj: Warrior.cpp.obj
 .PHONY : Warrior.obj
@@ -626,9 +770,18 @@ help:
 	@echo ... CombatEngine.obj
 	@echo ... CombatEngine.i
 	@echo ... CombatEngine.s
+	@echo ... CombatState.obj
+	@echo ... CombatState.i
+	@echo ... CombatState.s
 	@echo ... EventBus.obj
 	@echo ... EventBus.i
 	@echo ... EventBus.s
+	@echo ... GameOverState.obj
+	@echo ... GameOverState.i
+	@echo ... GameOverState.s
+	@echo ... GameStateManager.obj
+	@echo ... GameStateManager.i
+	@echo ... GameStateManager.s
 	@echo ... Goblin.obj
 	@echo ... Goblin.i
 	@echo ... Goblin.s
@@ -641,6 +794,9 @@ help:
 	@echo ... ItemFactory.obj
 	@echo ... ItemFactory.i
 	@echo ... ItemFactory.s
+	@echo ... MainMenuState.obj
+	@echo ... MainMenuState.i
+	@echo ... MainMenuState.s
 	@echo ... Merchant.obj
 	@echo ... Merchant.i
 	@echo ... Merchant.s
@@ -659,6 +815,9 @@ help:
 	@echo ... Rogue.obj
 	@echo ... Rogue.i
 	@echo ... Rogue.s
+	@echo ... ShopState.obj
+	@echo ... ShopState.i
+	@echo ... ShopState.s
 	@echo ... Slime.obj
 	@echo ... Slime.i
 	@echo ... Slime.s
@@ -668,6 +827,9 @@ help:
 	@echo ... StatBlock.obj
 	@echo ... StatBlock.i
 	@echo ... StatBlock.s
+	@echo ... TrainingAreaState.obj
+	@echo ... TrainingAreaState.i
+	@echo ... TrainingAreaState.s
 	@echo ... Warrior.obj
 	@echo ... Warrior.i
 	@echo ... Warrior.s

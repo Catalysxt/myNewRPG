@@ -31,4 +31,11 @@ add_executable(myRPG
     CombatEngine.cpp
     MonsterFactory.cpp
     EventBus.cpp
+    # Game State Machine files
+    GameStateManager.cpp
+    MainMenuState.cpp
+    ShopState.cpp
+    TrainingAreaState.cpp
+    CombatState.cpp
+    GameOverState.cpp
 )

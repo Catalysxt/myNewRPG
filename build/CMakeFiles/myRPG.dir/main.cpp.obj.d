@@ -155,32 +155,23 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
- C:/msys64/ucrt64/include/c++/15.2.0/limits \
- C:\Users\User\Coding\myNewRPG\StatBlock.h \
  C:\Users\User\Coding\myNewRPG\Character.h \
  C:/msys64/ucrt64/include/c++/15.2.0/vector \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\User\Coding\myNewRPG\StatBlock.h \
  C:\Users\User\Coding\myNewRPG\DamageStrategy.h \
  C:\Users\User\Coding\myNewRPG\StatusEffect.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
- C:\Users\User\Coding\myNewRPG\Warrior.h \
- C:\Users\User\Coding\myNewRPG\Wizard.h \
- C:\Users\User\Coding\myNewRPG\Cleric.h \
- C:\Users\User\Coding\myNewRPG\Rogue.h \
- C:\Users\User\Coding\myNewRPG\Orc.h \
- C:\Users\User\Coding\myNewRPG\Monster.h \
- C:\Users\User\Coding\myNewRPG\Slime.h \
- C:\Users\User\Coding\myNewRPG\Goblin.h \
- C:\Users\User\Coding\myNewRPG\Potion.h \
- C:\Users\User\Coding\myNewRPG\Item.h \
  C:\Users\User\Coding\myNewRPG\Merchant.h \
  C:\Users\User\Coding\myNewRPG\TradeResult.h \
  C:\Users\User\Coding\myNewRPG\PricingStrategy.h \
  C:\Users\User\Coding\myNewRPG\ItemFactory.h \
+ C:\Users\User\Coding\myNewRPG\Item.h \
+ C:\Users\User\Coding\myNewRPG\Potion.h \
  C:\Users\User\Coding\myNewRPG\IronHammer.h \
  C:\Users\User\Coding\myNewRPG\SlimeBubble.h \
  C:\Users\User\Coding\myNewRPG\CombatEngine.h \
@@ -188,6 +179,7 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/specfun.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/limits \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/gamma.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/special_function_util.h \
  C:/msys64/ucrt64/include/c++/15.2.0/tr1/bessel_function.tcc \
@@ -225,4 +217,11 @@ CMakeFiles/myRPG.dir/main.cpp.obj: C:\Users\User\Coding\myNewRPG\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/array \
  C:/msys64/ucrt64/include/c++/15.2.0/compare \
  C:\Users\User\Coding\myNewRPG\EventBus.h \
- C:\Users\User\Coding\myNewRPG\GameEvent.h
+ C:\Users\User\Coding\myNewRPG\GameEvent.h \
+ C:\Users\User\Coding\myNewRPG\Slime.h \
+ C:\Users\User\Coding\myNewRPG\Monster.h \
+ C:\Users\User\Coding\myNewRPG\Orc.h \
+ C:\Users\User\Coding\myNewRPG\Goblin.h \
+ C:\Users\User\Coding\myNewRPG\GameStateManager.h \
+ C:\Users\User\Coding\myNewRPG\IGameState.h \
+ C:\Users\User\Coding\myNewRPG\GameContext.h
