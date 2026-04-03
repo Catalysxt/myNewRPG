@@ -163,14 +163,14 @@ CMakeFiles/myRPG.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
  C:/Users/User/Coding/myNewRPG/src/character/StatBlock.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/DamageStrategy.h \
- C:/Users/User/Coding/myNewRPG/src/StatusEffect.h \
+ C:/Users/User/Coding/myNewRPG/src/combatEngine/StatusEffect.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
- C:\Users\User\Coding\myNewRPG\src\Merchant.h \
- C:\Users\User\Coding\myNewRPG\src\TradeResult.h \
+ C:/Users/User/Coding/myNewRPG/src/economy/Merchant.h \
+ C:/Users/User/Coding/myNewRPG/src/economy/TradeResult.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/PricingStrategy.h \
- C:\Users\User\Coding\myNewRPG\src\ItemFactory.h \
+ C:/Users/User/Coding/myNewRPG/src/item/ItemFactory.h \
  C:/Users/User/Coding/myNewRPG/src/item/Item.h \
  C:/Users/User/Coding/myNewRPG/src/item/Potion.h \
  C:/Users/User/Coding/myNewRPG/src/item/IronHammer.h \
@@ -205,7 +205,7 @@ CMakeFiles/myRPG.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
- C:\Users\User\Coding\myNewRPG\src\MonsterFactory.h \
+ C:/Users/User/Coding/myNewRPG/src/monsters/MonsterFactory.h \
  C:/msys64/ucrt64/include/c++/15.2.0/functional \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
@@ -217,12 +217,12 @@ CMakeFiles/myRPG.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/15.2.0/array \
  C:/msys64/ucrt64/include/c++/15.2.0/compare \
- C:\Users\User\Coding\myNewRPG\src\EventBus.h \
- C:\Users\User\Coding\myNewRPG\src\GameEvent.h \
+ C:/Users/User/Coding/myNewRPG/src/events/EventBus.h \
+ C:/Users/User/Coding/myNewRPG/src/events/GameEvent.h \
  C:/Users/User/Coding/myNewRPG/src/monsters/Slime.h \
  C:/Users/User/Coding/myNewRPG/src/monsters/Monster.h \
  C:/Users/User/Coding/myNewRPG/src/monsters/Orc.h \
  C:/Users/User/Coding/myNewRPG/src/monsters/Goblin.h \
- C:\Users\User\Coding\myNewRPG\src\GameStateManager.h \
+ C:/Users/User/Coding/myNewRPG/src/states/GameStateManager.h \
  C:/Users/User/Coding/myNewRPG/src/states/IGameState.h \
- C:\Users\User\Coding\myNewRPG\src\GameContext.h
+ C:/Users/User/Coding/myNewRPG/src/events/GameContext.h

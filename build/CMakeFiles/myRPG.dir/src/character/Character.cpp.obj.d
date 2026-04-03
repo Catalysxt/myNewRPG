@@ -179,7 +179,7 @@ CMakeFiles/myRPG.dir/src/character/Character.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  C:\Users\User\Coding\myNewRPG\src\character\StatBlock.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/DamageStrategy.h \
- C:/Users/User/Coding/myNewRPG/src/StatusEffect.h \
+ C:/Users/User/Coding/myNewRPG/src/combatEngine/StatusEffect.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
@@ -198,7 +198,7 @@ CMakeFiles/myRPG.dir/src/character/Character.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/numeric \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_numeric.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
- C:/Users/User/Coding/myNewRPG/src/EventBus.h \
+ C:/Users/User/Coding/myNewRPG/src/events/EventBus.h \
  C:/msys64/ucrt64/include/c++/15.2.0/unordered_map \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/unordered_map.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/hashtable.h \
@@ -210,4 +210,4 @@ CMakeFiles/myRPG.dir/src/character/Character.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/std_function.h \
  C:/msys64/ucrt64/include/c++/15.2.0/array \
  C:/msys64/ucrt64/include/c++/15.2.0/compare \
- C:/Users/User/Coding/myNewRPG/src/GameEvent.h
+ C:/Users/User/Coding/myNewRPG/src/events/GameEvent.h

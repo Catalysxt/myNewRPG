@@ -165,7 +165,7 @@ CMakeFiles/myRPG.dir/src/item/IronHammer.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/Users/User/Coding/myNewRPG/src/character/StatBlock.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/DamageStrategy.h \
- C:/Users/User/Coding/myNewRPG/src/StatusEffect.h \
+ C:/Users/User/Coding/myNewRPG/src/combatEngine/StatusEffect.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h

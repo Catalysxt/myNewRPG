@@ -2,7 +2,7 @@ CMakeFiles/myRPG.dir/src/states/ShopState.cpp.obj: \
  C:\Users\User\Coding\myNewRPG\src\states\ShopState.cpp \
  C:\Users\User\Coding\myNewRPG\src\states\ShopState.h \
  C:\Users\User\Coding\myNewRPG\src\states\IGameState.h \
- C:/Users/User/Coding/myNewRPG/src/GameContext.h \
+ C:/Users/User/Coding/myNewRPG/src/events/GameContext.h \
  C:/Users/User/Coding/myNewRPG/src/character/Character.h \
  C:/msys64/ucrt64/include/c++/15.2.0/string \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -145,11 +145,11 @@ CMakeFiles/myRPG.dir/src/states/ShopState.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
  C:/Users/User/Coding/myNewRPG/src/character/StatBlock.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/DamageStrategy.h \
- C:/Users/User/Coding/myNewRPG/src/StatusEffect.h \
+ C:/Users/User/Coding/myNewRPG/src/combatEngine/StatusEffect.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstdint \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
- C:/Users/User/Coding/myNewRPG/src/Merchant.h \
+ C:/Users/User/Coding/myNewRPG/src/economy/Merchant.h \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream \
  C:/msys64/ucrt64/include/c++/15.2.0/ostream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.h \
@@ -174,9 +174,9 @@ CMakeFiles/myRPG.dir/src/states/ShopState.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- C:/Users/User/Coding/myNewRPG/src/TradeResult.h \
+ C:/Users/User/Coding/myNewRPG/src/economy/TradeResult.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/PricingStrategy.h \
- C:/Users/User/Coding/myNewRPG/src/ItemFactory.h \
+ C:/Users/User/Coding/myNewRPG/src/item/ItemFactory.h \
  C:/Users/User/Coding/myNewRPG/src/item/Item.h \
  C:/Users/User/Coding/myNewRPG/src/item/Potion.h \
  C:/Users/User/Coding/myNewRPG/src/item/IronHammer.h \

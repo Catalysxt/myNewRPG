@@ -128,126 +128,6 @@ myRPG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/build
 .PHONY : myRPG/fast
 
-src/EventBus.obj: src/EventBus.cpp.obj
-.PHONY : src/EventBus.obj
-
-# target to build an object file
-src/EventBus.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/EventBus.cpp.obj
-.PHONY : src/EventBus.cpp.obj
-
-src/EventBus.i: src/EventBus.cpp.i
-.PHONY : src/EventBus.i
-
-# target to preprocess a source file
-src/EventBus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/EventBus.cpp.i
-.PHONY : src/EventBus.cpp.i
-
-src/EventBus.s: src/EventBus.cpp.s
-.PHONY : src/EventBus.s
-
-# target to generate assembly for a file
-src/EventBus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/EventBus.cpp.s
-.PHONY : src/EventBus.cpp.s
-
-src/GameStateManager.obj: src/GameStateManager.cpp.obj
-.PHONY : src/GameStateManager.obj
-
-# target to build an object file
-src/GameStateManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/GameStateManager.cpp.obj
-.PHONY : src/GameStateManager.cpp.obj
-
-src/GameStateManager.i: src/GameStateManager.cpp.i
-.PHONY : src/GameStateManager.i
-
-# target to preprocess a source file
-src/GameStateManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/GameStateManager.cpp.i
-.PHONY : src/GameStateManager.cpp.i
-
-src/GameStateManager.s: src/GameStateManager.cpp.s
-.PHONY : src/GameStateManager.s
-
-# target to generate assembly for a file
-src/GameStateManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/GameStateManager.cpp.s
-.PHONY : src/GameStateManager.cpp.s
-
-src/ItemFactory.obj: src/ItemFactory.cpp.obj
-.PHONY : src/ItemFactory.obj
-
-# target to build an object file
-src/ItemFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/ItemFactory.cpp.obj
-.PHONY : src/ItemFactory.cpp.obj
-
-src/ItemFactory.i: src/ItemFactory.cpp.i
-.PHONY : src/ItemFactory.i
-
-# target to preprocess a source file
-src/ItemFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/ItemFactory.cpp.i
-.PHONY : src/ItemFactory.cpp.i
-
-src/ItemFactory.s: src/ItemFactory.cpp.s
-.PHONY : src/ItemFactory.s
-
-# target to generate assembly for a file
-src/ItemFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/ItemFactory.cpp.s
-.PHONY : src/ItemFactory.cpp.s
-
-src/Merchant.obj: src/Merchant.cpp.obj
-.PHONY : src/Merchant.obj
-
-# target to build an object file
-src/Merchant.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/Merchant.cpp.obj
-.PHONY : src/Merchant.cpp.obj
-
-src/Merchant.i: src/Merchant.cpp.i
-.PHONY : src/Merchant.i
-
-# target to preprocess a source file
-src/Merchant.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/Merchant.cpp.i
-.PHONY : src/Merchant.cpp.i
-
-src/Merchant.s: src/Merchant.cpp.s
-.PHONY : src/Merchant.s
-
-# target to generate assembly for a file
-src/Merchant.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/Merchant.cpp.s
-.PHONY : src/Merchant.cpp.s
-
-src/MonsterFactory.obj: src/MonsterFactory.cpp.obj
-.PHONY : src/MonsterFactory.obj
-
-# target to build an object file
-src/MonsterFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/MonsterFactory.cpp.obj
-.PHONY : src/MonsterFactory.cpp.obj
-
-src/MonsterFactory.i: src/MonsterFactory.cpp.i
-.PHONY : src/MonsterFactory.i
-
-# target to preprocess a source file
-src/MonsterFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/MonsterFactory.cpp.i
-.PHONY : src/MonsterFactory.cpp.i
-
-src/MonsterFactory.s: src/MonsterFactory.cpp.s
-.PHONY : src/MonsterFactory.s
-
-# target to generate assembly for a file
-src/MonsterFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/MonsterFactory.cpp.s
-.PHONY : src/MonsterFactory.cpp.s
-
 src/character/Character.obj: src/character/Character.cpp.obj
 .PHONY : src/character/Character.obj
 
@@ -416,6 +296,54 @@ src/combatEngine/CombatEngine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/combatEngine/CombatEngine.cpp.s
 .PHONY : src/combatEngine/CombatEngine.cpp.s
 
+src/economy/Merchant.obj: src/economy/Merchant.cpp.obj
+.PHONY : src/economy/Merchant.obj
+
+# target to build an object file
+src/economy/Merchant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/economy/Merchant.cpp.obj
+.PHONY : src/economy/Merchant.cpp.obj
+
+src/economy/Merchant.i: src/economy/Merchant.cpp.i
+.PHONY : src/economy/Merchant.i
+
+# target to preprocess a source file
+src/economy/Merchant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/economy/Merchant.cpp.i
+.PHONY : src/economy/Merchant.cpp.i
+
+src/economy/Merchant.s: src/economy/Merchant.cpp.s
+.PHONY : src/economy/Merchant.s
+
+# target to generate assembly for a file
+src/economy/Merchant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/economy/Merchant.cpp.s
+.PHONY : src/economy/Merchant.cpp.s
+
+src/events/EventBus.obj: src/events/EventBus.cpp.obj
+.PHONY : src/events/EventBus.obj
+
+# target to build an object file
+src/events/EventBus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/events/EventBus.cpp.obj
+.PHONY : src/events/EventBus.cpp.obj
+
+src/events/EventBus.i: src/events/EventBus.cpp.i
+.PHONY : src/events/EventBus.i
+
+# target to preprocess a source file
+src/events/EventBus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/events/EventBus.cpp.i
+.PHONY : src/events/EventBus.cpp.i
+
+src/events/EventBus.s: src/events/EventBus.cpp.s
+.PHONY : src/events/EventBus.s
+
+# target to generate assembly for a file
+src/events/EventBus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/events/EventBus.cpp.s
+.PHONY : src/events/EventBus.cpp.s
+
 src/item/IronHammer.obj: src/item/IronHammer.cpp.obj
 .PHONY : src/item/IronHammer.obj
 
@@ -463,6 +391,30 @@ src/item/Item.s: src/item/Item.cpp.s
 src/item/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/item/Item.cpp.s
 .PHONY : src/item/Item.cpp.s
+
+src/item/ItemFactory.obj: src/item/ItemFactory.cpp.obj
+.PHONY : src/item/ItemFactory.obj
+
+# target to build an object file
+src/item/ItemFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/item/ItemFactory.cpp.obj
+.PHONY : src/item/ItemFactory.cpp.obj
+
+src/item/ItemFactory.i: src/item/ItemFactory.cpp.i
+.PHONY : src/item/ItemFactory.i
+
+# target to preprocess a source file
+src/item/ItemFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/item/ItemFactory.cpp.i
+.PHONY : src/item/ItemFactory.cpp.i
+
+src/item/ItemFactory.s: src/item/ItemFactory.cpp.s
+.PHONY : src/item/ItemFactory.s
+
+# target to generate assembly for a file
+src/item/ItemFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/item/ItemFactory.cpp.s
+.PHONY : src/item/ItemFactory.cpp.s
 
 src/item/Potion.obj: src/item/Potion.cpp.obj
 .PHONY : src/item/Potion.obj
@@ -584,6 +536,30 @@ src/monsters/Monster.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/monsters/Monster.cpp.s
 .PHONY : src/monsters/Monster.cpp.s
 
+src/monsters/MonsterFactory.obj: src/monsters/MonsterFactory.cpp.obj
+.PHONY : src/monsters/MonsterFactory.obj
+
+# target to build an object file
+src/monsters/MonsterFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/monsters/MonsterFactory.cpp.obj
+.PHONY : src/monsters/MonsterFactory.cpp.obj
+
+src/monsters/MonsterFactory.i: src/monsters/MonsterFactory.cpp.i
+.PHONY : src/monsters/MonsterFactory.i
+
+# target to preprocess a source file
+src/monsters/MonsterFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/monsters/MonsterFactory.cpp.i
+.PHONY : src/monsters/MonsterFactory.cpp.i
+
+src/monsters/MonsterFactory.s: src/monsters/MonsterFactory.cpp.s
+.PHONY : src/monsters/MonsterFactory.s
+
+# target to generate assembly for a file
+src/monsters/MonsterFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/monsters/MonsterFactory.cpp.s
+.PHONY : src/monsters/MonsterFactory.cpp.s
+
 src/monsters/Orc.obj: src/monsters/Orc.cpp.obj
 .PHONY : src/monsters/Orc.obj
 
@@ -680,6 +656,30 @@ src/states/GameOverState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/states/GameOverState.cpp.s
 .PHONY : src/states/GameOverState.cpp.s
 
+src/states/GameStateManager.obj: src/states/GameStateManager.cpp.obj
+.PHONY : src/states/GameStateManager.obj
+
+# target to build an object file
+src/states/GameStateManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/states/GameStateManager.cpp.obj
+.PHONY : src/states/GameStateManager.cpp.obj
+
+src/states/GameStateManager.i: src/states/GameStateManager.cpp.i
+.PHONY : src/states/GameStateManager.i
+
+# target to preprocess a source file
+src/states/GameStateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/states/GameStateManager.cpp.i
+.PHONY : src/states/GameStateManager.cpp.i
+
+src/states/GameStateManager.s: src/states/GameStateManager.cpp.s
+.PHONY : src/states/GameStateManager.s
+
+# target to generate assembly for a file
+src/states/GameStateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\myRPG.dir\build.make CMakeFiles/myRPG.dir/src/states/GameStateManager.cpp.s
+.PHONY : src/states/GameStateManager.cpp.s
+
 src/states/MainMenuState.obj: src/states/MainMenuState.cpp.obj
 .PHONY : src/states/MainMenuState.obj
 
@@ -761,21 +761,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... myRPG
-	@echo ... src/EventBus.obj
-	@echo ... src/EventBus.i
-	@echo ... src/EventBus.s
-	@echo ... src/GameStateManager.obj
-	@echo ... src/GameStateManager.i
-	@echo ... src/GameStateManager.s
-	@echo ... src/ItemFactory.obj
-	@echo ... src/ItemFactory.i
-	@echo ... src/ItemFactory.s
-	@echo ... src/Merchant.obj
-	@echo ... src/Merchant.i
-	@echo ... src/Merchant.s
-	@echo ... src/MonsterFactory.obj
-	@echo ... src/MonsterFactory.i
-	@echo ... src/MonsterFactory.s
 	@echo ... src/character/Character.obj
 	@echo ... src/character/Character.i
 	@echo ... src/character/Character.s
@@ -797,12 +782,21 @@ help:
 	@echo ... src/combatEngine/CombatEngine.obj
 	@echo ... src/combatEngine/CombatEngine.i
 	@echo ... src/combatEngine/CombatEngine.s
+	@echo ... src/economy/Merchant.obj
+	@echo ... src/economy/Merchant.i
+	@echo ... src/economy/Merchant.s
+	@echo ... src/events/EventBus.obj
+	@echo ... src/events/EventBus.i
+	@echo ... src/events/EventBus.s
 	@echo ... src/item/IronHammer.obj
 	@echo ... src/item/IronHammer.i
 	@echo ... src/item/IronHammer.s
 	@echo ... src/item/Item.obj
 	@echo ... src/item/Item.i
 	@echo ... src/item/Item.s
+	@echo ... src/item/ItemFactory.obj
+	@echo ... src/item/ItemFactory.i
+	@echo ... src/item/ItemFactory.s
 	@echo ... src/item/Potion.obj
 	@echo ... src/item/Potion.i
 	@echo ... src/item/Potion.s
@@ -818,6 +812,9 @@ help:
 	@echo ... src/monsters/Monster.obj
 	@echo ... src/monsters/Monster.i
 	@echo ... src/monsters/Monster.s
+	@echo ... src/monsters/MonsterFactory.obj
+	@echo ... src/monsters/MonsterFactory.i
+	@echo ... src/monsters/MonsterFactory.s
 	@echo ... src/monsters/Orc.obj
 	@echo ... src/monsters/Orc.i
 	@echo ... src/monsters/Orc.s
@@ -830,6 +827,9 @@ help:
 	@echo ... src/states/GameOverState.obj
 	@echo ... src/states/GameOverState.i
 	@echo ... src/states/GameOverState.s
+	@echo ... src/states/GameStateManager.obj
+	@echo ... src/states/GameStateManager.i
+	@echo ... src/states/GameStateManager.s
 	@echo ... src/states/MainMenuState.obj
 	@echo ... src/states/MainMenuState.i
 	@echo ... src/states/MainMenuState.s

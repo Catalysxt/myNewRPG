@@ -30,14 +30,14 @@ add_executable(myRPG
     src/item/SlimeBubble.cpp
     src/item/IronHammer.cpp
     
-    src/ItemFactory.cpp
-    src/Merchant.cpp
+    src/item/ItemFactory.cpp
+    src/economy/Merchant.cpp
     src/combatEngine/CombatEngine.cpp
-    src/MonsterFactory.cpp
-    src/EventBus.cpp
+    src/monsters/MonsterFactory.cpp
+    src/events/EventBus.cpp
 
     # Game State Machine files
-    src/GameStateManager.cpp
+    src/states/GameStateManager.cpp
     src/states/MainMenuState.cpp
     src/states/ShopState.cpp
     src/states/TrainingAreaState.cpp
@@ -54,4 +54,6 @@ target_include_directories(myRPG PRIVATE
     ${CMAKE_SOURCE_DIR}/src/states
     ${CMAKE_SOURCE_DIR}/src/combatEngine
     ${CMAKE_SOURCE_DIR}/src/strategies
+    ${CMAKE_SOURCE_DIR}/src/events
+    ${CMAKE_SOURCE_DIR}/src/economy
 )
