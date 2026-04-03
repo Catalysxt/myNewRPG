@@ -11,31 +11,47 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # This is better practice than using wildcards (GLOB) because CMake 
 # will know to re-build if you add/remove files from this list.
 add_executable(myRPG
-    main.cpp
-    StatBlock.cpp
-    Character.cpp
-    Warrior.cpp
-    Wizard.cpp
-    Cleric.cpp
-    Rogue.cpp
-    Monster.cpp
-    Orc.cpp
-    Slime.cpp
-    Goblin.cpp
-    Item.cpp
-    Potion.cpp
-    SlimeBubble.cpp
-    IronHammer.cpp
-    ItemFactory.cpp
-    Merchant.cpp
-    CombatEngine.cpp
-    MonsterFactory.cpp
-    EventBus.cpp
+    src/main.cpp
+
+    src/character/StatBlock.cpp
+    src/character/Character.cpp
+    src/character/Warrior.cpp
+    src/character/Wizard.cpp
+    src/character/Cleric.cpp
+    src/character/Rogue.cpp
+
+    src/monsters/Monster.cpp
+    src/monsters/Orc.cpp
+    src/monsters/Slime.cpp
+    src/monsters/Goblin.cpp
+
+    src/item/Item.cpp
+    src/item/Potion.cpp
+    src/item/SlimeBubble.cpp
+    src/item/IronHammer.cpp
+    
+    src/ItemFactory.cpp
+    src/Merchant.cpp
+    src/combatEngine/CombatEngine.cpp
+    src/MonsterFactory.cpp
+    src/EventBus.cpp
+
     # Game State Machine files
-    GameStateManager.cpp
-    MainMenuState.cpp
-    ShopState.cpp
-    TrainingAreaState.cpp
-    CombatState.cpp
-    GameOverState.cpp
+    src/GameStateManager.cpp
+    src/states/MainMenuState.cpp
+    src/states/ShopState.cpp
+    src/states/TrainingAreaState.cpp
+    src/states/CombatState.cpp
+    src/states/GameOverState.cpp
+)
+
+# Include directories so headers in subfolders are found by the compiler
+target_include_directories(myRPG PRIVATE
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/src/character
+    ${CMAKE_SOURCE_DIR}/src/item
+    ${CMAKE_SOURCE_DIR}/src/monsters
+    ${CMAKE_SOURCE_DIR}/src/states
+    ${CMAKE_SOURCE_DIR}/src/combatEngine
+    ${CMAKE_SOURCE_DIR}/src/strategies
 )
