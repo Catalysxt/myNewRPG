@@ -79,11 +79,11 @@ void MainMenuState::HandleInput(GameContext& context) {
     // The GameContext holds a non-owning pointer, so we need the manager
     // to own the character. For now, we use a static unique_ptr.
     // This will be refactored when we update main.cpp.
-    static std::unique_ptr<Character> s_Player;
-    s_Player = CreateCharacter(selectedType, name);
+    std::unique_ptr<Character> player;
+    player = CreateCharacter(selectedType, name);
     
-    if (s_Player) {
-        context.player = s_Player.get();
+    if (player) {
+        context.gameStateManager->MoveCharacter(std::move(player));
         
         std::cout << "\n----------------------------------------" << std::endl;
         std::cout << "You have chosen the path of the " << context.player->GetClassName() << "!" << std::endl;

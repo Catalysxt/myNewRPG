@@ -7,6 +7,7 @@ class Character;
 class Merchant;
 class CombatEngine;
 class MonsterFactory;
+class GameStateManager;
 
 /**
  * @brief Enumeration of all possible game states.
@@ -56,6 +57,8 @@ struct GameContext {
     CombatEngine* combatEngine = nullptr;
     MonsterFactory* monsterFactory = nullptr;
 
+    GameStateManager* gameStateManager = nullptr;
+
     // =========================================================================
     // State Transition Request
     // =========================================================================
@@ -100,6 +103,7 @@ struct GameContext {
     void ClearTransitionRequest() {
         requestedState = StateType::None;
     }
+
 };
 
 #endif // GAMECONTEXT_H

@@ -6,11 +6,8 @@
 #include "GameOverState.h"
 #include <iostream>
 
-GameStateManager::GameStateManager() 
-    : m_Context()
-    , m_CurrentState(nullptr)
-    , m_IsRunning(false) 
-{
+GameStateManager::GameStateManager() : m_Context(), m_CurrentState(nullptr), m_IsRunning(false) {
+    m_Context.gameStateManager = this;
 }
 
 GameStateManager::~GameStateManager() {
@@ -84,8 +81,7 @@ void GameStateManager::ProcessTransitions() {
 }
 
 std::unique_ptr<IGameState> GameStateManager::CreateState(StateType type) {
-    // Factory pattern: create concrete state based on enum type
-    // This is the ONLY place that knows about concrete state classes
+    // Factory pattern: create concrete state based on enum 
     switch (type) {
         case StateType::MainMenu:
             return std::make_unique<MainMenuState>();
@@ -100,4 +96,9 @@ std::unique_ptr<IGameState> GameStateManager::CreateState(StateType type) {
         default:
             return nullptr;
     }
+}
+
+void GameStateManager::MoveCharacter(std::unique_ptr<Character> player) {
+    m_player = std::move(player);
+    m_Context.player = m_player.get(); // Give it a raw pointer from the unique pointer 
 }

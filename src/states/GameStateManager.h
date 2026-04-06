@@ -14,11 +14,6 @@
  *   3. Runs the main game loop
  *   4. Handles state transitions cleanly
  * 
- * Usage:
- *   GameStateManager manager;
- *   manager.GetContext().player = myPlayer.get();  // Set up context
- *   manager.ChangeState(StateType::MainMenu);      // Set initial state
- *   manager.Run();                                  // Start game loop
  */
 class GameStateManager {
 public:
@@ -52,6 +47,12 @@ public:
      */
     bool IsRunning() const { return m_IsRunning; }
 
+    /**
+     * @brief Move the player character to the game manager.
+     * This transfers ownership of the player to the manager.
+     */
+    void MoveCharacter(std::unique_ptr<Character> player);
+
 private:
     /**
      * @brief Factory method to create a state from its type.
@@ -68,6 +69,8 @@ private:
     GameContext m_Context;
     std::unique_ptr<IGameState> m_CurrentState;
     bool m_IsRunning = false;
+    std::unique_ptr<Character> m_player;
+
 };
 
 #endif // GAMESTATEMANAGER_H

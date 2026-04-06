@@ -79,6 +79,7 @@ int main() {
     // Inject shared resources into context
     // Note: player is nullptr initially - MainMenuState will create it
     GameContext& context = gameManager.GetContext();
+    
     context.merchant = &greedyMerchant;
     context.combatEngine = &combatEngine;
     context.monsterFactory = &monsterFactory;
