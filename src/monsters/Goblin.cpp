@@ -1,3 +1,5 @@
+#include <string_view>
+
 #include "Goblin.h"
 
 // Goblin Stats:
@@ -7,6 +9,6 @@ Goblin::Goblin()
     : Monster("Goblin", 25, StatBlock(3, 2, 8, 1, 1)) {
 }
 
-std::string Goblin::GetClassName() {
+std::string_view Goblin::GetClassName() {
     return "Goblin";
 }

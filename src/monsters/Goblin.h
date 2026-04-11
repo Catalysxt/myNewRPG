@@ -1,4 +1,6 @@
 #pragma once
+#include <string_view>
+
 #include "Monster.h"
 
 // Goblin - Fast and dodgy, but weak
@@ -6,5 +8,5 @@
 class Goblin : public Monster {
 public:
     Goblin();
-    std::string GetClassName() override;
+    std::string_view GetClassName() override;
 };

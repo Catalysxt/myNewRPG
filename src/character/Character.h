@@ -1,7 +1,9 @@
 #pragma once
 #include <string>
+#include <string_view>
 #include <vector>
 #include <memory>
+
 #include "StatBlock.h"
 #include "DamageStrategy.h"
 #include "StatusEffect.h"
@@ -22,7 +24,7 @@ public:
     const std::string& GetName() const;
     
     // Abstract Method
-    virtual std::string GetClassName() = 0;
+    virtual std::string_view GetClassName() = 0;
     
     // Getters 
     int GetCurrentHP() const;
