@@ -19,7 +19,7 @@ public:
     void TakeDamage(int damage);
     void Heal(int amount);
 
-    std::string GetName() const;
+    const std::string& GetName() const;
     
     // Abstract Method
     virtual std::string GetClassName() = 0;

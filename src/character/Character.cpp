@@ -42,7 +42,7 @@ void Character::Heal(int amount) {
 
 // Getters
 
-std::string Character::GetName() {
+const std::string& Character::GetName() const {
     return m_Name;
 }
 
