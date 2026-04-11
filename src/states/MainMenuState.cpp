@@ -1,5 +1,6 @@
 #include "MainMenuState.h"
 #include "GameContext.h"
+#include "GameStateManager.h"
 #include "Character.h"
 #include "Warrior.h"
 #include "Wizard.h"
