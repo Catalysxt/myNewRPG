@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string_view>
+
 #include "Cleric.h"
 #include "CombatEngine.h"
 
@@ -9,7 +11,7 @@ Cleric::Cleric(std::string name)
     m_DamageStrategy = std::make_unique<MagicalDamageStrategy>();
 }
 
-std::string Cleric::GetClassName() {
+std::string_view Cleric::GetClassName() {
     return "Cleric";
 }
 

@@ -1,3 +1,5 @@
+#include <string_view>
+
 #include "Orc.h"
 #include "CombatEngine.h"
 #include "IronHammer.h"
@@ -10,7 +12,7 @@ Orc::Orc()
     m_LootDropChance = 15;  // 15% chance for Iron Hammer
 }
 
-std::string Orc::GetClassName() {
+std::string_view Orc::GetClassName() {
     return "Orc";
 }
 

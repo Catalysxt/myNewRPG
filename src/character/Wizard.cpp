@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string_view>
+
 #include "Wizard.h"
 #include "CombatEngine.h"
 
@@ -9,7 +11,7 @@ Wizard::Wizard(std::string name)
     m_DamageStrategy = std::make_unique<MagicalDamageStrategy>();
 }
 
-std::string Wizard::GetClassName() {
+std::string_view Wizard::GetClassName() {
     return "Wizard";
 }
 

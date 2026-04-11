@@ -100,14 +100,10 @@ CMakeFiles/myRPG.dir/src/states/MainMenuState.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/15.2.0/tuple \
  C:/Users/User/Coding/myNewRPG/src/events/GameContext.h \
- C:/Users/User/Coding/myNewRPG/src/character/Character.h \
- C:/msys64/ucrt64/include/c++/15.2.0/vector \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
+ C:\Users\User\Coding\myNewRPG\src\states\GameStateManager.h \
  C:/msys64/ucrt64/include/c++/15.2.0/memory \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/align.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/unique_ptr.h \
@@ -143,6 +139,11 @@ CMakeFiles/myRPG.dir/src/states/MainMenuState.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/execution_defs.h \
+ C:/Users/User/Coding/myNewRPG/src/character/Character.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/vector \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
  C:/Users/User/Coding/myNewRPG/src/character/StatBlock.h \
  C:/Users/User/Coding/myNewRPG/src/strategies/DamageStrategy.h \
  C:/Users/User/Coding/myNewRPG/src/combatEngine/StatusEffect.h \

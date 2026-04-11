@@ -1,4 +1,6 @@
 #pragma once
+#include <string_view>
+
 #include "Monster.h"
 
 // Slime - Weak starter enemy
@@ -6,7 +8,7 @@
 class Slime : public Monster {
 public:
     Slime(); 
-    std::string GetClassName() override;
+    std::string_view GetClassName() override;
     
     // 25% chance to drop Slime Bubble
     std::unique_ptr<Item> GetLootDrop(CombatEngine& engine) const override;
