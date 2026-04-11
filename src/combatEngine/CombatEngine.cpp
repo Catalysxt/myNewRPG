@@ -1,4 +1,6 @@
 #include "CombatEngine.h"
+#include "DamageStrategy.h"
+
 #include <algorithm> // For std::max, std::clamp
 
 // ============================================================================
@@ -72,7 +74,7 @@ AttackResult CombatEngine::CalculateAttack(
 
     // --- Step 5: Apply Mitigation (Armor or Resistance) ---
     // Magical damage is reduced by Resistance, Physical by Armor
-    bool isMagical = (strategy.GetName() == std::string("Magical"));
+    bool isMagical = (strategy.GetName() == DamageType::Magical);
     result.finalDamage = ApplyMitigation(damage, defenderStats, isMagical);
 
     // Ensure we always deal at least 1 damage (unless dodged)

@@ -13,6 +13,13 @@
 // - Combat modifiers (buffs, debuffs) can wrap existing strategies (Decorator pattern later)
 // ============================================================================
 
+enum class DamageType
+{
+    Physical,
+    Magical,
+    True
+};
+
 class DamageStrategy {
 public:
     virtual ~DamageStrategy() = default;
@@ -20,7 +27,7 @@ public:
     // Returns: Final calculated damage
     virtual int CalculateDamage(int baseDamage, const StatBlock& attackerStats) const = 0;
 
-    virtual const char* GetName() const = 0;
+    virtual DamageType GetName() const = 0;
 };
 
 // ============================================================================
@@ -35,7 +42,7 @@ public:
         return baseDamage + (attackerStats.GetStrength() / 2); // Formula
     }
 
-    const char* GetName() const override { return "Physical"; }
+    DamageType GetName() const override { return DamageType::Physical; }
 };
 
 // ============================================================================
@@ -51,7 +58,7 @@ public:
         return baseDamage + static_cast<int>(attackerStats.GetIntellect() * 1.2);
     }
 
-    const char* GetName() const override { return "Magical"; }
+    DamageType GetName() const override { return DamageType::Magical; }
 };
 
 // ============================================================================
@@ -68,5 +75,5 @@ public:
         return baseDamage;
     }
 
-    const char* GetName() const override { return "True"; }
+    DamageType GetName() const override { return DamageType::True; }
 };

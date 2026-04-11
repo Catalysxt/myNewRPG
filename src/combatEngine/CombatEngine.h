@@ -29,7 +29,7 @@ struct AttackResult {
     int finalDamage;     // After armor/resistance
     bool isCritical;     // Was this a critical hit?
     bool wasDodged;      // Did the defender dodge?
-    const char* damageType; // "Physical", "Magical", etc.
+    DamageType damageType;  // Physical, Magical, True, etc.
 };
 
 class CombatEngine {
