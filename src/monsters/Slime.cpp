@@ -1,5 +1,3 @@
-#include <string_view>
-
 #include "Slime.h"
 #include "CombatEngine.h"
 #include "SlimeBubble.h"
@@ -12,7 +10,7 @@ Slime::Slime()
     m_LootDropChance = 25;  // 25% chance for Slime Bubble
 }
 
-std::string_view Slime::GetClassName() {
+std::string Slime::GetClassName() {
     return "Slime";
 }
 

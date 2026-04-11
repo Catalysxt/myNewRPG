@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string_view>
-
 #include "Rogue.h"
 #include "CombatEngine.h"
 
@@ -11,7 +9,7 @@ Rogue::Rogue(std::string name)
     m_DamageStrategy = std::make_unique<PhysicalDamageStrategy>();
 }
 
-std::string_view Rogue::GetClassName() {
+std::string Rogue::GetClassName() {
     return "Rogue";
 }
 

@@ -1,6 +1,4 @@
 #pragma once
-#include <string_view>
-
 #include "Character.h"
 
 // Rogue - Agility-based class with high crit/dodge
@@ -8,7 +6,7 @@
 class Rogue : public Character {
 public:
     Rogue(std::string name);
-    std::string_view GetClassName() override;
+    std::string GetClassName() override;
     std::string GetAbilityName() const override { return "Backstab"; }
     void LevelUp() override;
 

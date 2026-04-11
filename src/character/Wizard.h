@@ -1,6 +1,4 @@
 #pragma once
-#include <string_view>
-
 #include "Character.h"
 
 // Wizard - Intelligence-based spellcaster
@@ -8,7 +6,7 @@
 class Wizard : public Character {
 public:
     Wizard(std::string name);
-    std::string_view GetClassName() override;
+    std::string GetClassName() override;
     std::string GetAbilityName() const override { return "Fireball"; }
     void LevelUp() override;
 

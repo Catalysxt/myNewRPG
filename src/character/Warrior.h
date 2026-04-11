@@ -1,6 +1,4 @@
 #pragma once
-#include <string_view>
-
 #include "Character.h"
 
 // Warrior - Tank class with high HP and Strength
@@ -9,7 +7,7 @@ class Warrior : public Character {
 public:
     Warrior(std::string name);
     
-    std::string_view GetClassName() override;
+    std::string GetClassName() override;
     std::string GetAbilityName() const override { return "Shield Bash"; }
     void LevelUp() override;
 
