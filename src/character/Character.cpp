@@ -156,7 +156,7 @@ void Character::ExecuteSpecialAbility(Character* /*target*/, CombatEngine& /*eng
 void Character::GainXP(int amount) {
     m_CurrentXP += amount;
     std::cout << m_Name << " gained " << amount << " XP!" << std::endl;
-    if (m_CurrentXP >= m_MaxXP) {
+    while (m_CurrentXP >= m_MaxXP) {
         LevelUp();
     }
 }
