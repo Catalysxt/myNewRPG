@@ -77,13 +77,13 @@ public:
     int GetBaseCritChance() const { return m_BaseCritChance; }
 
     // Access to random engine (for other systems that need randomness)
-    std::mt19937& GetRandomEngine() { return m_RandomEngine; }
+    std::mt19937& GetRandomEngine() const { return m_RandomEngine; }
 
 private:
     // ========================================================================
     // RANDOM NUMBER GENERATION - The Modern C++ Way
     // ========================================================================
-    std::mt19937 m_RandomEngine;  // Mersenne Twister pseudo-random generator
+    mutable std::mt19937 m_RandomEngine;  // Mersenne Twister pseudo-random generator
 
     // Pre-created distributions for common roll types
     // Creating distributions is cheap, but reusing them is cleaner
