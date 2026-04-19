@@ -92,6 +92,8 @@ public:
     // Gold System
     int GetGold() const;
     void AddGold(int amount);
+    
+    [[nodiscard("Check if the character has enough gold")]]
     bool SpendGold(int amount); // Returns false if insufficient funds
 
     // XP System 

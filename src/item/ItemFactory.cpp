@@ -1,5 +1,8 @@
-#include "ItemFactory.h"
 #include <vector>
+#include <string_view>
+
+#include "ItemFactory.h"
+
 
 // Justification: Factory Pattern Implementation
 // This is where we define HOW items are created based on their name.
@@ -8,7 +11,7 @@ std::unique_ptr<Item> ShopItem::CreateInstance() const {
     return ItemFactory::CreateItem(name);
 }
 
-std::unique_ptr<Item> ItemFactory::CreateItem(const std::string& itemName) {
+std::unique_ptr<Item> ItemFactory::CreateItem(std::string_view itemName) {
     // Justification: Centralized Creation Logic
     // All item instantiation happens here. To add a new item type,
     // just add a new `else if` block.

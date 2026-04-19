@@ -2,6 +2,8 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <string_view>
+
 #include "Item.h"
 #include "Potion.h"
 #include "IronHammer.h"
@@ -28,7 +30,7 @@ public:
     // Justification: Static Method
     // We don't need an instance of ItemFactory to create items.
     // Using a static method makes it globally accessible.
-    static std::unique_ptr<Item> CreateItem(const std::string& itemName);
+    static std::unique_ptr<Item> CreateItem(std::string_view itemName);
 
     // Returns the catalog of items available for purchase (name + base price).
     static std::vector<ShopItem> GetShopCatalog();

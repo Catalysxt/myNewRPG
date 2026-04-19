@@ -44,17 +44,6 @@ void MonsterFactory::RebuildDistribution() {
 // ============================================================================
 // Uses std::discrete_distribution to select a monster index directly.
 // The distribution handles all weight math internally.
-//
-// OLD approach (O(n) per spawn):
-//   Roll a number, then walk through every entry accumulating weights
-//   until the roll is covered. For 3 monsters this is trivial, but
-//   for hundreds it becomes a linear scan every single spawn.
-//
-// NEW approach (O(1) per spawn after O(n) setup):
-//   std::discrete_distribution pre-computes lookup tables during
-//   construction. Each call to operator() returns a weighted random
-//   index in constant time.
-// ============================================================================
 
 std::unique_ptr<Monster> MonsterFactory::SpawnRandom() {
     if (m_Entries.empty()) {

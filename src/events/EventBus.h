@@ -53,6 +53,7 @@ public:
     
     // Subscribe to an event type. Returns a token that controls the
     // subscription's lifetime. Hold the token to stay subscribed.
+    [[nodiscard("Discarding the token will cause the subscription to be cancelled")]]
     SubscriptionToken Subscribe(EventType type, EventHandler handler);
     
     void Publish(const GameEvent& event);
