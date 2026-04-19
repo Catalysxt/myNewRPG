@@ -1,4 +1,5 @@
 #include <iostream>
+#include <numeric>
 #include "MonsterFactory.h"
 #include "Monster.h"
 #include "CombatEngine.h"
@@ -14,36 +15,75 @@ void MonsterFactory::Register(
     std::function<std::unique_ptr<Monster>()> factoryFn
 ) {
     m_Entries.push_back({name, weight, hpVariance, std::move(factoryFn)});
-    m_TotalWeight += weight;
+    m_DistributionDirty = true;  // Mark for rebuild on next spawn
 }
 
+// ============================================================================
+// REBUILD DISTRIBUTION
+// ============================================================================
+// Extracts the weights from all entries and passes them to
+// std::discrete_distribution, which pre-computes an internal data
+// structure for O(1) index selection.
+// Called lazily — only when SpawnRandom() detects the dirty flag.
+// ============================================================================
+
+void MonsterFactory::RebuildDistribution() {
+    std::vector<double> weights;
+    weights.reserve(m_Entries.size());
+
+    for (const auto& entry : m_Entries) {
+        weights.push_back(static_cast<double>(entry.weight));
+    }
+
+    m_Distribution = std::discrete_distribution<int>(weights.begin(), weights.end());
+    m_DistributionDirty = false;
+}
+
+// ============================================================================
+// SPAWN RANDOM
+// ============================================================================
+// Uses std::discrete_distribution to select a monster index directly.
+// The distribution handles all weight math internally.
+//
+// OLD approach (O(n) per spawn):
+//   Roll a number, then walk through every entry accumulating weights
+//   until the roll is covered. For 3 monsters this is trivial, but
+//   for hundreds it becomes a linear scan every single spawn.
+//
+// NEW approach (O(1) per spawn after O(n) setup):
+//   std::discrete_distribution pre-computes lookup tables during
+//   construction. Each call to operator() returns a weighted random
+//   index in constant time.
+// ============================================================================
+
 std::unique_ptr<Monster> MonsterFactory::SpawnRandom() {
-    if (m_Entries.empty() || m_TotalWeight <= 0) {
+    if (m_Entries.empty()) {
         return nullptr;
     }
     
-    // Roll a random number from 1 to total weight
-    std::uniform_int_distribution<int> dist(1, m_TotalWeight);
-    int roll = dist(m_Engine.GetRandomEngine());
-    
-    // Find which monster the roll corresponds to
-    int cumulative = 0;
-    for (const auto& entry : m_Entries) {
-        cumulative += entry.weight;
-        if (roll <= cumulative) {
-            // Create the monster
-            auto monster = entry.create();
-            
-            // Apply HP variance
-            ApplyHPVariance(*monster, entry.hpVariance);
-            
-            std::cout << "A wild " << monster->GetClassName() << " appears!" << std::endl;
-            return monster;
-        }
+    // Rebuild the distribution only if entries have changed
+    if (m_DistributionDirty) {
+        RebuildDistribution();
     }
     
-    // Should never reach here, but fallback to first entry
-    return m_Entries[0].create();
+    // Select a random index — weighted, O(1)
+    int index = m_Distribution(m_Engine.GetRandomEngine());
+    
+    const auto& entry = m_Entries[index];
+    
+    // Create the monster
+    auto monster = entry.create();
+    
+    // Apply HP variance
+    ApplyHPVariance(*monster, entry.hpVariance);
+    
+    std::cout << "A wild " << monster->GetClassName() << " appears!" << std::endl;
+    return monster;
+}
+
+int MonsterFactory::GetTotalWeight() const {
+    return std::accumulate(m_Entries.begin(), m_Entries.end(), 0,
+        [](int sum, const MonsterEntry& e) { return sum + e.weight; });
 }
 
 void MonsterFactory::ApplyHPVariance(Monster& monster, float variance) {

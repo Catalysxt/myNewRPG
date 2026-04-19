@@ -3,6 +3,7 @@
 #include <memory>
 #include <functional>
 #include <string>
+#include <random>
 
 // Forward declarations
 class Monster;
@@ -46,12 +47,19 @@ public:
     std::unique_ptr<Monster> SpawnRandom();
     
     // Get total weight (for debugging/display)
-    int GetTotalWeight() const { return m_TotalWeight; }
+    int GetTotalWeight() const;
     
 private:
     CombatEngine& m_Engine;
     std::vector<MonsterEntry> m_Entries;
-    int m_TotalWeight = 0;
+    
+    // The distribution maps weights to indices. Rebuilt lazily
+    // only when SpawnRandom() is called after a Register().
+    std::discrete_distribution<int> m_Distribution;
+    bool m_DistributionDirty = false;
+    
+    // Rebuilds the distribution from current weights
+    void RebuildDistribution();
     
     // Apply HP variance to spawned monster
     void ApplyHPVariance(Monster& monster, float variance);
