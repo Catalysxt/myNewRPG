@@ -16,27 +16,47 @@ EventBus& EventBus::Instance() {
 // ============================================================================
 // SUBSCRIBE
 // ============================================================================
-// Adds a handler function that will be called whenever an event of
-// the specified type is published.
+// Creates a subscription token (shared_ptr<bool>) and stores the handler
+// alongside a weak_ptr observer of that token. The caller holds the
+// shared_ptr, which keeps the subscription alive. When the caller
+// destroys or resets the token, the weak_ptr expires, and the handler
+// will be cleaned up during the next Publish() call.
 // ============================================================================
 
-void EventBus::Subscribe(EventType type, EventHandler handler) {
-    m_Subscribers[type].push_back(std::move(handler));
+SubscriptionToken EventBus::Subscribe(EventType type, EventHandler handler) {
+    auto token = std::make_shared<bool>(true);
+    m_Subscribers[type].push_back({ token, std::move(handler) });
+    return token;
 }
 
 // ============================================================================
 // PUBLISH
 // ============================================================================
-// Notifies all subscribers of the given event type.
-// Each subscriber's handler function is called with the event data.
+// Notifies all living subscribers of the given event type.
+// After dispatching, dead subscriptions (whose tokens have expired)
+// are swept from the vector using the erase-remove idiom.
 // ============================================================================
 
 void EventBus::Publish(const GameEvent& event) {
-    auto it = m_Subscribers.find(event.type); // Find the value associated with this key
+    auto it = m_Subscribers.find(event.type);
     if (it != m_Subscribers.end()) {
-        for (const auto& handler : it->second) { // Iterate through all handlers
-            handler(event); // Pass in Gameevent. This includes the EventType e.g CharacterLevelUp
+        auto& subs = it->second;
+
+        // Dispatch to living handlers only
+        for (const auto& sub : subs) {
+            if (!sub.token.expired()) {
+                sub.handler(event);
+            }
         }
+
+        // Cleanup: erase-remove dead subscriptions whose tokens have expired.
+        // std::remove_if shifts living elements to the front and returns an
+        // iterator to the new logical end. erase() then trims the dead tail.
+        subs.erase(
+            std::remove_if(subs.begin(), subs.end(),
+                [](const Subscription& s) { return s.token.expired(); }),
+            subs.end()
+        );
     }
 }
 
@@ -44,6 +64,8 @@ void EventBus::Publish(const GameEvent& event) {
 // CLEAR ALL
 // ============================================================================
 // Removes all subscribers. Useful for testing or game reset.
+// Note: This does NOT invalidate tokens held by callers - those
+// shared_ptrs remain valid but the handlers are simply gone.
 // ============================================================================
 
 void EventBus::ClearAll() {

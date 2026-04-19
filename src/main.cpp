@@ -36,21 +36,35 @@ int main() {
     // These lambdas are called whenever their event type is published.
     // This decouples logging from game logic.
     
-    EventBus::Instance().Subscribe(EventType::CharacterDamaged, [](const GameEvent& e) {
-        std::cout << "[LOG] " << e.target->GetName() << " took " << e.value << " damage" << std::endl;
-    });
+    // Store subscription tokens - subscriptions stay alive as long as
+    // these tokens exist. Since they live in main(), they last the
+    // entire program. To unsubscribe, call token.reset() or let it
+    // go out of scope.
+    std::vector<SubscriptionToken> eventTokens;
+
+    eventTokens.push_back(
+        EventBus::Instance().Subscribe(EventType::CharacterDamaged, [](const GameEvent& e) {
+            std::cout << "[LOG] " << e.target->GetName() << " took " << e.value << " damage" << std::endl;
+        })
+    );
     
-    EventBus::Instance().Subscribe(EventType::CharacterDied, [](const GameEvent& e) {
-        std::cout << "[LOG] " << e.target->GetName() << " has fallen!" << std::endl;
-    });
+    eventTokens.push_back(
+        EventBus::Instance().Subscribe(EventType::CharacterDied, [](const GameEvent& e) {
+            std::cout << "[LOG] " << e.target->GetName() << " has fallen!" << std::endl;
+        })
+    );
     
-    EventBus::Instance().Subscribe(EventType::CharacterHealed, [](const GameEvent& e) {
-        std::cout << "[LOG] " << e.target->GetName() << " healed for " << e.value << " HP" << std::endl;
-    });
+    eventTokens.push_back(
+        EventBus::Instance().Subscribe(EventType::CharacterHealed, [](const GameEvent& e) {
+            std::cout << "[LOG] " << e.target->GetName() << " healed for " << e.value << " HP" << std::endl;
+        })
+    );
     
-    EventBus::Instance().Subscribe(EventType::CharacterLeveledUp, [](const GameEvent& e) {
-        std::cout << "[LOG] " << e.target->GetName() << " reached level " << e.value << "!" << std::endl;
-    });
+    eventTokens.push_back(
+        EventBus::Instance().Subscribe(EventType::CharacterLeveledUp, [](const GameEvent& e) {
+            std::cout << "[LOG] " << e.target->GetName() << " reached level " << e.value << "!" << std::endl;
+        })
+    );
 
     // =========================================================================
     // SHARED RESOURCES (Owned by main, accessed via GameContext)
