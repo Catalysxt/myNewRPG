@@ -1,30 +1,36 @@
 #include <vector>
 #include <string_view>
+#include <unordered_map>
+#include <functional>
 
 #include "ItemFactory.h"
 
-
 // Justification: Factory Pattern Implementation
 // This is where we define HOW items are created based on their name.
+
+std::unordered_map<std::string, std::function<std::unique_ptr<Item>()>>& ItemFactory::GetRegistry() {
+    static std::unordered_map<std::string, std::function<std::unique_ptr<Item>()>> m_Registry;
+    return m_Registry; 
+}
+
+
+void ItemFactory::Register(const std::string& name, std::function<std::unique_ptr<Item>()> factory_fn) {
+    GetRegistry()[name] = std::move(factory_fn);
+}
 
 std::unique_ptr<Item> ShopItem::CreateInstance() const {
     return ItemFactory::CreateItem(name);
 }
 
 std::unique_ptr<Item> ItemFactory::CreateItem(std::string_view itemName) {
-    // Justification: Centralized Creation Logic
-    // All item instantiation happens here. To add a new item type,
-    // just add a new `else if` block.
-    if (itemName == "Health Potion") {
-        return std::make_unique<Potion>(30);
-    } 
-    else if (itemName == "Greater Health Potion") {
-        return std::make_unique<Potion>(75);
+    auto& registry = GetRegistry();
+
+    // Convert parameter into string so we can lookup in the map
+    auto it = registry.find(std::string(itemName));
+    if (it != registry.end()) {
+        // Found a match. Create the item
+        return it->second();
     }
-    // Add more items here as you create them:
-    // else if (itemName == "Iron Sword") {
-    //     return std::make_unique<Sword>(10); // Damage: 10
-    // }
     
     return nullptr; // Item not found
 }

@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include <string_view>
+#include <unordered_map>
+#include <functional>
 
 #include "Item.h"
 #include "Potion.h"
@@ -27,6 +29,9 @@ struct ShopItem {
 
 class ItemFactory {
 public:
+    // Registering items is required to store them in m_Registry
+    static void Register(const std::string& name, std::function<std::unique_ptr<Item>()> factory_fn);
+
     // Justification: Static Method
     // We don't need an instance of ItemFactory to create items.
     // Using a static method makes it globally accessible.
@@ -34,4 +39,8 @@ public:
 
     // Returns the catalog of items available for purchase (name + base price).
     static std::vector<ShopItem> GetShopCatalog();
+
+private:
+    // Registry of item creation functions
+    static std::unordered_map<std::string, std::function<std::unique_ptr<Item>()>>& GetRegistry();
 };

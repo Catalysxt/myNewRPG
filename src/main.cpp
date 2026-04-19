@@ -85,6 +85,9 @@ int main() {
     monsterFactory.Register("Orc", 30, 0.15f, []() { return std::make_unique<Orc>(); });
     monsterFactory.Register("Goblin", 10, 0.15f, []() { return std::make_unique<Goblin>(); });
 
+    // Register items
+    ItemFactory::Register("Health Potion",         []() { return std::make_unique<Potion>(30); });
+    ItemFactory::Register("Greater Health Potion", []() { return std::make_unique<Potion>(75); });
     // =========================================================================
     // GAME STATE MACHINE SETUP
     // =========================================================================
