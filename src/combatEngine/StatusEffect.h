@@ -32,33 +32,33 @@ enum class StatusEffect : uint8_t {
 // Without these, using | or & on enum class would be a compile error.
 // ============================================================================
 
-inline StatusEffect operator|(StatusEffect a, StatusEffect b) {
+constexpr StatusEffect operator|(StatusEffect a, StatusEffect b) {
     return static_cast<StatusEffect>(
         static_cast<uint8_t>(a) | static_cast<uint8_t>(b)
     );
 }
 
-inline StatusEffect operator&(StatusEffect a, StatusEffect b) {
+constexpr StatusEffect operator&(StatusEffect a, StatusEffect b) {
     return static_cast<StatusEffect>(
         static_cast<uint8_t>(a) & static_cast<uint8_t>(b)
     );
 }
 
-inline StatusEffect operator~(StatusEffect a) {
+constexpr StatusEffect operator~(StatusEffect a) {
     return static_cast<StatusEffect>(~static_cast<uint8_t>(a));
 }
 
-inline StatusEffect& operator|=(StatusEffect& a, StatusEffect b) {
+constexpr StatusEffect& operator|=(StatusEffect& a, StatusEffect b) {
     a = a | b;
     return a;
 }
 
-inline StatusEffect& operator&=(StatusEffect& a, StatusEffect b) {
+constexpr StatusEffect& operator&=(StatusEffect& a, StatusEffect b) {
     a = a & b;
     return a;
 }
 
 // Helper to check if a specific effect is active
-inline bool HasEffect(StatusEffect status, StatusEffect effect) {
+constexpr bool HasEffect(StatusEffect status, StatusEffect effect) {
     return (status & effect) != StatusEffect::None;
 }
