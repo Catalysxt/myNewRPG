@@ -24,8 +24,8 @@ EventBus& EventBus::Instance() {
 // ============================================================================
 
 SubscriptionToken EventBus::Subscribe(EventType type, EventHandler handler) {
-    auto token = std::make_shared<bool>(true);
-    m_Subscribers[type].push_back({ token, std::move(handler) });
+    auto token = std::make_shared<bool>(true); // Enable the subscription
+    m_Subscribers[type].push_back({ token, std::move(handler) }); // Use aggregate initialization
     return token;
 }
 
@@ -44,7 +44,7 @@ void EventBus::Publish(const GameEvent& event) {
 
         // Dispatch to living handlers only
         for (const auto& sub : subs) {
-            if (!sub.token.expired()) {
+            if (!sub.token.expired()) { // Check if object isn't destroyed
                 sub.handler(event);
             }
         }
